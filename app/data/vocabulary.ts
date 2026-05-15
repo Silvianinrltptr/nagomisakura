@@ -1,0 +1,160 @@
+export type Category = "QA/Bug" | "Komunikasi" | "Report" | "Standup" | "Kerja umum";
+export type Level = "N5" | "N4";
+
+export interface Vocabulary {
+  id: string;
+  kanji: string;
+  hiragana: string;
+  romaji: string;
+  meaning: string;
+  shortExample: string;
+  category: Category;
+  level: Level;
+  fullExampleJP: string;
+  fullExampleHiragana: string;
+  fullExampleID: string;
+  tip: string;
+}
+
+export const VOCABULARY_DATA: Vocabulary[] = [
+  {
+    id: "1",
+    kanji: "会社",
+    hiragana: "かいしゃ",
+    romaji: "kaisha",
+    meaning: "kantor / perusahaan",
+    shortExample: "Saya bekerja di kantor.",
+    category: "Kerja umum",
+    level: "N5",
+    fullExampleJP: "会社で働いています。",
+    fullExampleHiragana: "かいしゃで はたらいています。",
+    fullExampleID: "Saya sedang bekerja di perusahaan.",
+    tip: "Kata dasar untuk menyebut tempat kerja/kantor.",
+  },
+  {
+    id: "2",
+    kanji: "確認します",
+    hiragana: "かくにんします",
+    romaji: "kakunin shimasu",
+    meaning: "saya akan cek",
+    shortExample: "Akan saya konfirmasi dulu.",
+    category: "Komunikasi",
+    level: "N5",
+    fullExampleJP: "こちら確認します。",
+    fullExampleHiragana: "こちら かくにんします。",
+    fullExampleID: "Saya akan cek bagian ini.",
+    tip: "Kata paling dasar! Pakai saat ingin bilang \"saya akan cek/konfirmasi\" ke atasan atau tim.",
+  },
+  {
+    id: "3",
+    kanji: "修正しました",
+    hiragana: "しゅうせいしました",
+    romaji: "shuusei shimashita",
+    meaning: "sudah diperbaiki",
+    shortExample: "Bug sudah diperbaiki.",
+    category: "QA/Bug",
+    level: "N4",
+    fullExampleJP: "不具合を修正しました。",
+    fullExampleHiragana: "ふぐあいを しゅうせいしました。",
+    fullExampleID: "Bug/cacat (pada sistem) sudah diperbaiki.",
+    tip: "Sangat sering dipakai oleh developer setelah memperbaiki tiket bug.",
+  },
+  {
+    id: "4",
+    kanji: "進捗",
+    hiragana: "しんちょく",
+    romaji: "shinchoku",
+    meaning: "progress pekerjaan",
+    shortExample: "Bagaimana progressnya?",
+    category: "Standup",
+    level: "N4",
+    fullExampleJP: "進捗を共有します。",
+    fullExampleHiragana: "しんちょくを きょうゆうします。",
+    fullExampleID: "Saya akan membagikan progress pekerjaan.",
+    tip: "Kata wajib saat daily standup untuk melaporkan status tiket.",
+  },
+  {
+    id: "5",
+    kanji: "会議",
+    hiragana: "かいぎ",
+    romaji: "kaigi",
+    meaning: "meeting / rapat",
+    shortExample: "Meeting jam 10.",
+    category: "Standup",
+    level: "N5",
+    fullExampleJP: "会議は10時からです。",
+    fullExampleHiragana: "かいぎは じゅうじからです。",
+    fullExampleID: "Meeting dimulai dari jam 10.",
+    tip: "Gunakan untuk menyebut jadwal meeting harian atau mingguan.",
+  },
+  {
+    id: "6",
+    kanji: "報告します",
+    hiragana: "ほうこくします",
+    romaji: "houkoku shimasu",
+    meaning: "saya akan lapor",
+    shortExample: "Lapor ke PM.",
+    category: "Report",
+    level: "N4",
+    fullExampleJP: "マネージャーに報告します。",
+    fullExampleHiragana: "まねーじゃーに ほうこくします。",
+    fullExampleID: "Saya akan melaporkan ke manajer.",
+    tip: "Penting dalam budaya Ho-Ren-So (Lapor, Hubungi, Konsultasi).",
+  },
+  {
+    id: "7",
+    kanji: "不具合",
+    hiragana: "ふぐあい",
+    romaji: "fuguai",
+    meaning: "bug / error / cacat",
+    shortExample: "Ada bug di sistem.",
+    category: "QA/Bug",
+    level: "N4",
+    fullExampleJP: "システムに不具合があります。",
+    fullExampleHiragana: "しすてむに ふぐあいがあります。",
+    fullExampleID: "Ada bug/error di dalam sistem.",
+    tip: "Lebih formal dari kata 'bagu' (バグ). Sering dipakai di tiket Jira Jepang.",
+  },
+  {
+    id: "8",
+    kanji: "仕様書",
+    hiragana: "しようしょ",
+    romaji: "shiyousho",
+    meaning: "dokumen spesifikasi / PRD",
+    shortExample: "Cek spec document.",
+    category: "Kerja umum",
+    level: "N4",
+    fullExampleJP: "仕様書を確認してください。",
+    fullExampleHiragana: "しようしょを かくにんしてください。",
+    fullExampleID: "Tolong periksa dokumen spesifikasinya.",
+    tip: "Dokumen yang jadi panduan developer & QA saat kerja.",
+  },
+  {
+    id: "9",
+    kanji: "共有します",
+    hiragana: "きょうゆうします",
+    romaji: "kyouyuu shimasu",
+    meaning: "akan di-share",
+    shortExample: "Share screen/info.",
+    category: "Komunikasi",
+    level: "N4",
+    fullExampleJP: "画面を共有します。",
+    fullExampleHiragana: "がめんを きょうゆうします。",
+    fullExampleID: "Saya akan share screen (layar).",
+    tip: "Sangat sering dipakai saat online meeting di Zoom/Meet.",
+  },
+  {
+    id: "10",
+    kanji: "残業",
+    hiragana: "ざんぎょう",
+    romaji: "zangyou",
+    meaning: "lembur",
+    shortExample: "Hari ini lembur.",
+    category: "Kerja umum",
+    level: "N5",
+    fullExampleJP: "今日は残業します。",
+    fullExampleHiragana: "きょうは ざんぎょうします。",
+    fullExampleID: "Hari ini saya akan lembur.",
+    tip: "Realita kerja di IT, hati-hati jangan sampai kebanyakan lembur (karoushi).",
+  }
+];
