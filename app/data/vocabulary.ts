@@ -33,19 +33,19 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "tip": "Sangat sering dipakai oleh developer setelah memperbaiki tiket bug.",
     "examples": [
       {
-        "jp": "不具合を修正しました。",
-        "hiragana": "ふぐあいを しゅうせいしました。",
-        "id": "Bug/cacat (pada sistem) sudah diperbaiki."
+        "jp": "修正をお願いします。",
+        "hiragana": "しゅうせいを おねがいします。",
+        "id": "Tolong terkait revisi / perbaikan."
       },
       {
-        "jp": "コードを修正します。",
-        "hiragana": "こーどを しゅうせいします。",
-        "id": "Saya akan memperbaiki kodenya."
+        "jp": "修正は終わりましたか？",
+        "hiragana": "しゅうせいは おわりましたか？",
+        "id": "Apakah revisi / perbaikan sudah selesai?"
       },
       {
-        "jp": "修正内容を共有します。",
-        "hiragana": "しゅうせい ないようを きょうゆうします。",
-        "id": "Saya akan membagikan detail perbaikannya."
+        "jp": "今日の修正について話しましょう。",
+        "hiragana": "きょうの しゅうせいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang revisi / perbaikan hari ini."
       }
     ]
   },
@@ -58,17 +58,17 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Ada bug di sistem.",
     "category": "QA/Bug",
     "level": "N4",
-    "tip": "Lebih formal dari kata 'bagu' (バグ). Sering dipakai di tiket Jira Jepang.",
+    "tip": "Lebih formal dari kata 'bagu' (バグ).",
     "examples": [
       {
-        "jp": "システムに不具合があります。",
-        "hiragana": "しすてむに ふぐあいがあります。",
-        "id": "Ada bug/error di dalam sistem."
+        "jp": "不具合をお願いします。",
+        "hiragana": "ふぐあいを おねがいします。",
+        "id": "Tolong terkait bug / error / cacat."
       },
       {
-        "jp": "不具合を調査しています。",
-        "hiragana": "ふぐあいを ちょうさしています。",
-        "id": "Saya sedang menyelidiki bug tersebut."
+        "jp": "不具合は終わりましたか？",
+        "hiragana": "ふぐあいは おわりましたか？",
+        "id": "Apakah bug / error / cacat sudah selesai?"
       },
       {
         "jp": "今日の不具合について話しましょう。",
@@ -583,6 +583,566 @@ export const VOCABULARY_DATA: Vocabulary[] = [
   },
   {
     "id": "21",
+    "kanji": "脆弱性",
+    "hiragana": "ぜいじゃくせい",
+    "romaji": "zeijakusei",
+    "meaning": "kerentanan / vulnerability",
+    "shortExample": "Ada vulnerability tinggi.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Isu keamanan / security issue.",
+    "examples": [
+      {
+        "jp": "脆弱性をお願いします。",
+        "hiragana": "ぜいじゃくせいを おねがいします。",
+        "id": "Tolong terkait kerentanan / vulnerability."
+      },
+      {
+        "jp": "脆弱性は終わりましたか？",
+        "hiragana": "ぜいじゃくせいは おわりましたか？",
+        "id": "Apakah kerentanan / vulnerability sudah selesai?"
+      },
+      {
+        "jp": "今日の脆弱性について話しましょう。",
+        "hiragana": "きょうの ぜいじゃくせいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kerentanan / vulnerability hari ini."
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "kanji": "仕様漏れ",
+    "hiragana": "しようもれ",
+    "romaji": "shiyoumore",
+    "meaning": "spec terlewat",
+    "shortExample": "Ada spec yang terlewat.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Masalah karena requirement tidak tertulis di dokumen.",
+    "examples": [
+      {
+        "jp": "仕様漏れをお願いします。",
+        "hiragana": "しようもれを おねがいします。",
+        "id": "Tolong terkait spec terlewat."
+      },
+      {
+        "jp": "仕様漏れは終わりましたか？",
+        "hiragana": "しようもれは おわりましたか？",
+        "id": "Apakah spec terlewat sudah selesai?"
+      },
+      {
+        "jp": "今日の仕様漏れについて話しましょう。",
+        "hiragana": "きょうの しようもれについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang spec terlewat hari ini."
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "kanji": "強制終了",
+    "hiragana": "きょうせいしゅうりょう",
+    "romaji": "kyouseishuuryou",
+    "meaning": "force close / crash",
+    "shortExample": "Aplikasi crash.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Crash secara tiba-tiba di aplikasi mobile atau desktop.",
+    "examples": [
+      {
+        "jp": "強制終了をお願いします。",
+        "hiragana": "きょうせいしゅうりょうを おねがいします。",
+        "id": "Tolong terkait force close / crash."
+      },
+      {
+        "jp": "強制終了は終わりましたか？",
+        "hiragana": "きょうせいしゅうりょうは おわりましたか？",
+        "id": "Apakah force close / crash sudah selesai?"
+      },
+      {
+        "jp": "今日の強制終了について話しましょう。",
+        "hiragana": "きょうの きょうせいしゅうりょうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang force close / crash hari ini."
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "kanji": "例外",
+    "hiragana": "れいがい",
+    "romaji": "reigai",
+    "meaning": "exception",
+    "shortExample": "Terjadi exception error.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Error pada code level (NullPointerException dll).",
+    "examples": [
+      {
+        "jp": "例外をお願いします。",
+        "hiragana": "れいがいを おねがいします。",
+        "id": "Tolong terkait exception."
+      },
+      {
+        "jp": "例外は終わりましたか？",
+        "hiragana": "れいがいは おわりましたか？",
+        "id": "Apakah exception sudah selesai?"
+      },
+      {
+        "jp": "今日の例外について話しましょう。",
+        "hiragana": "きょうの れいがいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang exception hari ini."
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "kanji": "異常",
+    "hiragana": "いじょう",
+    "romaji": "ijou",
+    "meaning": "abnormal",
+    "shortExample": "Perilaku abnormal.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Sistem berjalan tidak semestinya.",
+    "examples": [
+      {
+        "jp": "異常をお願いします。",
+        "hiragana": "いじょうを おねがいします。",
+        "id": "Tolong terkait abnormal."
+      },
+      {
+        "jp": "異常は終わりましたか？",
+        "hiragana": "いじょうは おわりましたか？",
+        "id": "Apakah abnormal sudah selesai?"
+      },
+      {
+        "jp": "今日の異常について話しましょう。",
+        "hiragana": "きょうの いじょうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang abnormal hari ini."
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "kanji": "文字化け",
+    "hiragana": "もじばけ",
+    "romaji": "mojibake",
+    "meaning": "karakter rusak (garbled)",
+    "shortExample": "Teksnya mojibake.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Sering terjadi di web Jepang karena isu encoding UTF-8 / Shift-JIS.",
+    "examples": [
+      {
+        "jp": "文字化けをお願いします。",
+        "hiragana": "もじばけを おねがいします。",
+        "id": "Tolong terkait karakter rusak (garbled)."
+      },
+      {
+        "jp": "文字化けは終わりましたか？",
+        "hiragana": "もじばけは おわりましたか？",
+        "id": "Apakah karakter rusak (garbled) sudah selesai?"
+      },
+      {
+        "jp": "今日の文字化けについて話しましょう。",
+        "hiragana": "きょうの もじばけについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang karakter rusak (garbled) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "kanji": "応答",
+    "hiragana": "おうとう",
+    "romaji": "outou",
+    "meaning": "respons",
+    "shortExample": "Tidak ada respons.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Biasa dipakai kalau API timeout atau server no response.",
+    "examples": [
+      {
+        "jp": "応答をお願いします。",
+        "hiragana": "おうとうを おねがいします。",
+        "id": "Tolong terkait respons."
+      },
+      {
+        "jp": "応答は終わりましたか？",
+        "hiragana": "おうとうは おわりましたか？",
+        "id": "Apakah respons sudah selesai?"
+      },
+      {
+        "jp": "今日の応答について話しましょう。",
+        "hiragana": "きょうの おうとうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang respons hari ini."
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "kanji": "回避策",
+    "hiragana": "かいひさく",
+    "romaji": "kaihisaku",
+    "meaning": "workaround",
+    "shortExample": "Punya workaround?",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Solusi sementara untuk menghindari bug sebelum fix beneran.",
+    "examples": [
+      {
+        "jp": "回避策をお願いします。",
+        "hiragana": "かいひさくを おねがいします。",
+        "id": "Tolong terkait workaround."
+      },
+      {
+        "jp": "回避策は終わりましたか？",
+        "hiragana": "かいひさくは おわりましたか？",
+        "id": "Apakah workaround sudah selesai?"
+      },
+      {
+        "jp": "今日の回避策について話しましょう。",
+        "hiragana": "きょうの かいひさくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang workaround hari ini."
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "kanji": "検知",
+    "hiragana": "けんち",
+    "romaji": "kenchi",
+    "meaning": "deteksi",
+    "shortExample": "Bug terdeteksi di log.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Sistem mendeteksi adanya error.",
+    "examples": [
+      {
+        "jp": "検知をお願いします。",
+        "hiragana": "けんちを おねがいします。",
+        "id": "Tolong terkait deteksi."
+      },
+      {
+        "jp": "検知は終わりましたか？",
+        "hiragana": "けんちは おわりましたか？",
+        "id": "Apakah deteksi sudah selesai?"
+      },
+      {
+        "jp": "今日の検知について話しましょう。",
+        "hiragana": "きょうの けんちについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang deteksi hari ini."
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "kanji": "修正版",
+    "hiragana": "しゅうせいばん",
+    "romaji": "shuuseiban",
+    "meaning": "versi perbaikan",
+    "shortExample": "Rilis versi perbaikan.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Versi patch/hotfix.",
+    "examples": [
+      {
+        "jp": "修正版をお願いします。",
+        "hiragana": "しゅうせいばんを おねがいします。",
+        "id": "Tolong terkait versi perbaikan."
+      },
+      {
+        "jp": "修正版は終わりましたか？",
+        "hiragana": "しゅうせいばんは おわりましたか？",
+        "id": "Apakah versi perbaikan sudah selesai?"
+      },
+      {
+        "jp": "今日の修正版について話しましょう。",
+        "hiragana": "きょうの しゅうせいばんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang versi perbaikan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "31",
+    "kanji": "負荷",
+    "hiragana": "ふか",
+    "romaji": "fuka",
+    "meaning": "beban (load)",
+    "shortExample": "Beban server tinggi.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Biasa dipakai untuk load testing.",
+    "examples": [
+      {
+        "jp": "負荷をお願いします。",
+        "hiragana": "ふかを おねがいします。",
+        "id": "Tolong terkait beban (load)."
+      },
+      {
+        "jp": "負荷は終わりましたか？",
+        "hiragana": "ふかは おわりましたか？",
+        "id": "Apakah beban (load) sudah selesai?"
+      },
+      {
+        "jp": "今日の負荷について話しましょう。",
+        "hiragana": "きょうの ふかについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang beban (load) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "32",
+    "kanji": "遅延",
+    "hiragana": "ちえん",
+    "romaji": "chien",
+    "meaning": "delay / lag",
+    "shortExample": "Ada lag di UI.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Respon sistem lambat.",
+    "examples": [
+      {
+        "jp": "遅延をお願いします。",
+        "hiragana": "ちえんを おねがいします。",
+        "id": "Tolong terkait delay / lag."
+      },
+      {
+        "jp": "遅延は終わりましたか？",
+        "hiragana": "ちえんは おわりましたか？",
+        "id": "Apakah delay / lag sudah selesai?"
+      },
+      {
+        "jp": "今日の遅延について話しましょう。",
+        "hiragana": "きょうの ちえんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang delay / lag hari ini."
+      }
+    ]
+  },
+  {
+    "id": "33",
+    "kanji": "未定義",
+    "hiragana": "みていぎ",
+    "romaji": "miteigi",
+    "meaning": "undefined",
+    "shortExample": "Variabel undefined.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Pesan error standar di JavaScript.",
+    "examples": [
+      {
+        "jp": "未定義をお願いします。",
+        "hiragana": "みていぎを おねがいします。",
+        "id": "Tolong terkait undefined."
+      },
+      {
+        "jp": "未定義は終わりましたか？",
+        "hiragana": "みていぎは おわりましたか？",
+        "id": "Apakah undefined sudah selesai?"
+      },
+      {
+        "jp": "今日の未定義について話しましょう。",
+        "hiragana": "きょうの みていぎについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang undefined hari ini."
+      }
+    ]
+  },
+  {
+    "id": "34",
+    "kanji": "互換性",
+    "hiragana": "ごかんせい",
+    "romaji": "gokansei",
+    "meaning": "kompatibilitas",
+    "shortExample": "Isu kompatibilitas browser.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Misal bug yang cuma ada di Safari atau IE lama.",
+    "examples": [
+      {
+        "jp": "互換性をお願いします。",
+        "hiragana": "ごかんせいを おねがいします。",
+        "id": "Tolong terkait kompatibilitas."
+      },
+      {
+        "jp": "互換性は終わりましたか？",
+        "hiragana": "ごかんせいは おわりましたか？",
+        "id": "Apakah kompatibilitas sudah selesai?"
+      },
+      {
+        "jp": "今日の互換性について話しましょう。",
+        "hiragana": "きょうの ごかんせいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kompatibilitas hari ini."
+      }
+    ]
+  },
+  {
+    "id": "35",
+    "kanji": "移行",
+    "hiragana": "いこう",
+    "romaji": "ikou",
+    "meaning": "migrasi",
+    "shortExample": "Migrasi database error.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Perpindahan data dari sistem lama ke baru.",
+    "examples": [
+      {
+        "jp": "移行をお願いします。",
+        "hiragana": "いこうを おねがいします。",
+        "id": "Tolong terkait migrasi."
+      },
+      {
+        "jp": "移行は終わりましたか？",
+        "hiragana": "いこうは おわりましたか？",
+        "id": "Apakah migrasi sudah selesai?"
+      },
+      {
+        "jp": "今日の移行について話しましょう。",
+        "hiragana": "きょうの いこうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang migrasi hari ini."
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "kanji": "切断",
+    "hiragana": "せつだん",
+    "romaji": "setsudan",
+    "meaning": "terputus",
+    "shortExample": "Koneksi terputus.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Network timeout atau disconnected.",
+    "examples": [
+      {
+        "jp": "切断をお願いします。",
+        "hiragana": "せつだんを おねがいします。",
+        "id": "Tolong terkait terputus."
+      },
+      {
+        "jp": "切断は終わりましたか？",
+        "hiragana": "せつだんは おわりましたか？",
+        "id": "Apakah terputus sudah selesai?"
+      },
+      {
+        "jp": "今日の切断について話しましょう。",
+        "hiragana": "きょうの せつだんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang terputus hari ini."
+      }
+    ]
+  },
+  {
+    "id": "37",
+    "kanji": "再起動",
+    "hiragana": "さいきどう",
+    "romaji": "saikidou",
+    "meaning": "restart",
+    "shortExample": "Coba restart servernya.",
+    "category": "QA/Bug",
+    "level": "N5",
+    "tip": "Solusi paling klasik di dunia IT.",
+    "examples": [
+      {
+        "jp": "再起動をお願いします。",
+        "hiragana": "さいきどうを おねがいします。",
+        "id": "Tolong terkait restart."
+      },
+      {
+        "jp": "再起動は終わりましたか？",
+        "hiragana": "さいきどうは おわりましたか？",
+        "id": "Apakah restart sudah selesai?"
+      },
+      {
+        "jp": "今日の再起動について話しましょう。",
+        "hiragana": "きょうの さいきどうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang restart hari ini."
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "kanji": "設定ミス",
+    "hiragana": "せっていみす",
+    "romaji": "setteimisu",
+    "meaning": "salah konfigurasi",
+    "shortExample": "Oh, cuma salah setting.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Bug yang disebabkan karena kelalaian setup.",
+    "examples": [
+      {
+        "jp": "設定ミスをお願いします。",
+        "hiragana": "せっていみすを おねがいします。",
+        "id": "Tolong terkait salah konfigurasi."
+      },
+      {
+        "jp": "設定ミスは終わりましたか？",
+        "hiragana": "せっていみすは おわりましたか？",
+        "id": "Apakah salah konfigurasi sudah selesai?"
+      },
+      {
+        "jp": "今日の設定ミスについて話しましょう。",
+        "hiragana": "きょうの せっていみすについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang salah konfigurasi hari ini."
+      }
+    ]
+  },
+  {
+    "id": "39",
+    "kanji": "手順書",
+    "hiragana": "てじゅんしょ",
+    "romaji": "tejunsho",
+    "meaning": "dokumen panduan",
+    "shortExample": "Cek di panduan manual.",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Runbook atau manual book.",
+    "examples": [
+      {
+        "jp": "手順書をお願いします。",
+        "hiragana": "てじゅんしょを おねがいします。",
+        "id": "Tolong terkait dokumen panduan."
+      },
+      {
+        "jp": "手順書は終わりましたか？",
+        "hiragana": "てじゅんしょは おわりましたか？",
+        "id": "Apakah dokumen panduan sudah selesai?"
+      },
+      {
+        "jp": "今日の手順書について話しましょう。",
+        "hiragana": "きょうの てじゅんしょについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang dokumen panduan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "40",
+    "kanji": "本番",
+    "hiragana": "ほんばん",
+    "romaji": "honban",
+    "meaning": "production",
+    "shortExample": "Bug di production!",
+    "category": "QA/Bug",
+    "level": "N4",
+    "tip": "Environment paling menakutkan kalau sampai ada bug.",
+    "examples": [
+      {
+        "jp": "本番をお願いします。",
+        "hiragana": "ほんばんを おねがいします。",
+        "id": "Tolong terkait production."
+      },
+      {
+        "jp": "本番は終わりましたか？",
+        "hiragana": "ほんばんは おわりましたか？",
+        "id": "Apakah production sudah selesai?"
+      },
+      {
+        "jp": "今日の本番について話しましょう。",
+        "hiragana": "きょうの ほんばんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang production hari ini."
+      }
+    ]
+  },
+  {
+    "id": "41",
     "kanji": "確認",
     "hiragana": "かくにん",
     "romaji": "kakunin",
@@ -590,17 +1150,17 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Akan saya konfirmasi dulu.",
     "category": "Komunikasi",
     "level": "N5",
-    "tip": "Kata paling dasar! Pakai saat ingin bilang \"saya akan cek/konfirmasi\" ke atasan atau tim.",
+    "tip": "Kata paling dasar! Pakai saat ingin bilang 'saya akan cek'.",
     "examples": [
       {
-        "jp": "こちら確認します。",
-        "hiragana": "こちら かくにんします。",
-        "id": "Saya akan cek bagian ini."
+        "jp": "確認をお願いします。",
+        "hiragana": "かくにんを おねがいします。",
+        "id": "Tolong terkait konfirmasi / cek."
       },
       {
-        "jp": "仕様を確認しました。",
-        "hiragana": "しようを かくにんしました。",
-        "id": "Saya sudah mengonfirmasi spesifikasinya."
+        "jp": "確認は終わりましたか？",
+        "hiragana": "かくにんは おわりましたか？",
+        "id": "Apakah konfirmasi / cek sudah selesai?"
       },
       {
         "jp": "今日の確認について話しましょう。",
@@ -610,7 +1170,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "22",
+    "id": "42",
     "kanji": "共有",
     "hiragana": "きょうゆう",
     "romaji": "kyouyuu",
@@ -618,7 +1178,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Share screen/info.",
     "category": "Komunikasi",
     "level": "N4",
-    "tip": "Sangat sering dipakai saat online meeting di Zoom/Meet.",
+    "tip": "Sangat sering dipakai saat online meeting.",
     "examples": [
       {
         "jp": "共有をお願いします。",
@@ -638,7 +1198,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "23",
+    "id": "43",
     "kanji": "相談",
     "hiragana": "そうだん",
     "romaji": "soudan",
@@ -646,7 +1206,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Saya ingin konsultasi.",
     "category": "Komunikasi",
     "level": "N5",
-    "tip": "Dipakai saat ingin meminta saran atau berdiskusi sebelum mengambil keputusan.",
+    "tip": "Dipakai saat ingin meminta saran atau berdiskusi.",
     "examples": [
       {
         "jp": "相談をお願いします。",
@@ -666,7 +1226,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "24",
+    "id": "44",
     "kanji": "連絡",
     "hiragana": "れんらく",
     "romaji": "renraku",
@@ -694,7 +1254,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "25",
+    "id": "45",
     "kanji": "依頼",
     "hiragana": "いらい",
     "romaji": "irai",
@@ -722,7 +1282,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "26",
+    "id": "46",
     "kanji": "対応",
     "hiragana": "たいおう",
     "romaji": "taiou",
@@ -750,7 +1310,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "27",
+    "id": "47",
     "kanji": "手順",
     "hiragana": "てじゅん",
     "romaji": "tejun",
@@ -778,7 +1338,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "28",
+    "id": "48",
     "kanji": "質問",
     "hiragana": "しつもん",
     "romaji": "shitsumon",
@@ -806,7 +1366,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "29",
+    "id": "49",
     "kanji": "回答",
     "hiragana": "かいとう",
     "romaji": "kaitou",
@@ -814,7 +1374,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Ini jawabannya.",
     "category": "Komunikasi",
     "level": "N4",
-    "tip": "Memberikan respon atas pertanyaan yang diajukan.",
+    "tip": "Memberikan respon atas pertanyaan.",
     "examples": [
       {
         "jp": "回答をお願いします。",
@@ -834,7 +1394,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "30",
+    "id": "50",
     "kanji": "詳細",
     "hiragana": "しょうさい",
     "romaji": "shousai",
@@ -842,7 +1402,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Tolong berikan detailnya.",
     "category": "Komunikasi",
     "level": "N4",
-    "tip": "Meminta penjelasan lebih lanjut agar tidak ada miss komunikasi.",
+    "tip": "Meminta penjelasan lebih lanjut.",
     "examples": [
       {
         "jp": "詳細をお願いします。",
@@ -862,7 +1422,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "31",
+    "id": "51",
     "kanji": "承知",
     "hiragana": "しょうち",
     "romaji": "shouchi",
@@ -870,7 +1430,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Baik, saya mengerti.",
     "category": "Komunikasi",
     "level": "N4",
-    "tip": "Lebih sopan dari 'wakarimashita', wajib dipakai ke atasan atau klien.",
+    "tip": "Lebih sopan dari 'wakarimashita', wajib dipakai ke atasan.",
     "examples": [
       {
         "jp": "承知をお願いします。",
@@ -890,7 +1450,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "32",
+    "id": "52",
     "kanji": "提案",
     "hiragana": "ていあん",
     "romaji": "teian",
@@ -918,7 +1478,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "33",
+    "id": "53",
     "kanji": "説明",
     "hiragana": "せつめい",
     "romaji": "setsumei",
@@ -946,7 +1506,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "34",
+    "id": "54",
     "kanji": "打合せ",
     "hiragana": "うちあわせ",
     "romaji": "uchiawase",
@@ -974,7 +1534,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "35",
+    "id": "55",
     "kanji": "了解",
     "hiragana": "りょうかい",
     "romaji": "ryoukai",
@@ -982,7 +1542,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Roger that.",
     "category": "Komunikasi",
     "level": "N4",
-    "tip": "Sering dipakai di chat internal, tapi kurang sopan jika ke klien.",
+    "tip": "Sering dipakai di chat internal, kurang sopan untuk klien.",
     "examples": [
       {
         "jp": "了解をお願いします。",
@@ -1002,7 +1562,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "36",
+    "id": "56",
     "kanji": "意見",
     "hiragana": "いけん",
     "romaji": "iken",
@@ -1030,7 +1590,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "37",
+    "id": "57",
     "kanji": "賛成",
     "hiragana": "さんせい",
     "romaji": "sansei",
@@ -1038,7 +1598,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Saya setuju.",
     "category": "Komunikasi",
     "level": "N4",
-    "tip": "Menyatakan persetujuan atas sebuah usulan.",
+    "tip": "Menyatakan persetujuan atas usulan.",
     "examples": [
       {
         "jp": "賛成をお願いします。",
@@ -1058,7 +1618,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "38",
+    "id": "58",
     "kanji": "反対",
     "hiragana": "はんたい",
     "romaji": "hantai",
@@ -1086,7 +1646,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "39",
+    "id": "59",
     "kanji": "返信",
     "hiragana": "へんしん",
     "romaji": "henshin",
@@ -1114,7 +1674,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "40",
+    "id": "60",
     "kanji": "添付",
     "hiragana": "てんぷ",
     "romaji": "tenpu",
@@ -1122,7 +1682,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Cek file terlampir.",
     "category": "Komunikasi",
     "level": "N4",
-    "tip": "Sering digunakan di email untuk menyebut file yang di-attach.",
+    "tip": "Sering digunakan di email.",
     "examples": [
       {
         "jp": "添付をお願いします。",
@@ -1142,7 +1702,567 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "41",
+    "id": "61",
+    "kanji": "会議室",
+    "hiragana": "かいぎしつ",
+    "romaji": "kaigishitsu",
+    "meaning": "ruang meeting",
+    "shortExample": "Booking ruang meeting.",
+    "category": "Komunikasi",
+    "level": "N5",
+    "tip": "Penting untuk rapat offline.",
+    "examples": [
+      {
+        "jp": "会議室をお願いします。",
+        "hiragana": "かいぎしつを おねがいします。",
+        "id": "Tolong terkait ruang meeting."
+      },
+      {
+        "jp": "会議室は終わりましたか？",
+        "hiragana": "かいぎしつは おわりましたか？",
+        "id": "Apakah ruang meeting sudah selesai?"
+      },
+      {
+        "jp": "今日の会議室について話しましょう。",
+        "hiragana": "きょうの かいぎしつについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang ruang meeting hari ini."
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "kanji": "名刺",
+    "hiragana": "めいし",
+    "romaji": "meishi",
+    "meaning": "kartu nama",
+    "shortExample": "Tukar kartu nama.",
+    "category": "Komunikasi",
+    "level": "N5",
+    "tip": "Budaya bisnis Jepang, tukar meishi di awal pertemuan.",
+    "examples": [
+      {
+        "jp": "名刺をお願いします。",
+        "hiragana": "めいしを おねがいします。",
+        "id": "Tolong terkait kartu nama."
+      },
+      {
+        "jp": "名刺は終わりましたか？",
+        "hiragana": "めいしは おわりましたか？",
+        "id": "Apakah kartu nama sudah selesai?"
+      },
+      {
+        "jp": "今日の名刺について話しましょう。",
+        "hiragana": "きょうの めいしについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kartu nama hari ini."
+      }
+    ]
+  },
+  {
+    "id": "63",
+    "kanji": "挨拶",
+    "hiragana": "あいさつ",
+    "romaji": "aisatsu",
+    "meaning": "salam",
+    "shortExample": "Beri salam yang baik.",
+    "category": "Komunikasi",
+    "level": "N5",
+    "tip": "Ohayou, otsukaresama, dll.",
+    "examples": [
+      {
+        "jp": "挨拶をお願いします。",
+        "hiragana": "あいさつを おねがいします。",
+        "id": "Tolong terkait salam."
+      },
+      {
+        "jp": "挨拶は終わりましたか？",
+        "hiragana": "あいさつは おわりましたか？",
+        "id": "Apakah salam sudah selesai?"
+      },
+      {
+        "jp": "今日の挨拶について話しましょう。",
+        "hiragana": "きょうの あいさつについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang salam hari ini."
+      }
+    ]
+  },
+  {
+    "id": "64",
+    "kanji": "お疲れ様",
+    "hiragana": "おつかれさま",
+    "romaji": "otsukaresama",
+    "meaning": "terima kasih atas kerja kerasnya",
+    "shortExample": "Otsukaresama desu!",
+    "category": "Komunikasi",
+    "level": "N5",
+    "tip": "Salam wajib diucapkan saat bertemu, chatting, atau pulang.",
+    "examples": [
+      {
+        "jp": "お疲れ様をお願いします。",
+        "hiragana": "おつかれさまを おねがいします。",
+        "id": "Tolong terkait terima kasih atas kerja kerasnya."
+      },
+      {
+        "jp": "お疲れ様は終わりましたか？",
+        "hiragana": "おつかれさまは おわりましたか？",
+        "id": "Apakah terima kasih atas kerja kerasnya sudah selesai?"
+      },
+      {
+        "jp": "今日のお疲れ様について話しましょう。",
+        "hiragana": "きょうの おつかれさまについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang terima kasih atas kerja kerasnya hari ini."
+      }
+    ]
+  },
+  {
+    "id": "65",
+    "kanji": "ごめん",
+    "hiragana": "ごめん",
+    "romaji": "gomen",
+    "meaning": "maaf",
+    "shortExample": "Maaf ya.",
+    "category": "Komunikasi",
+    "level": "N5",
+    "tip": "Kasual, untuk teman selevel.",
+    "examples": [
+      {
+        "jp": "ごめんをお願いします。",
+        "hiragana": "ごめんを おねがいします。",
+        "id": "Tolong terkait maaf."
+      },
+      {
+        "jp": "ごめんは終わりましたか？",
+        "hiragana": "ごめんは おわりましたか？",
+        "id": "Apakah maaf sudah selesai?"
+      },
+      {
+        "jp": "今日のごめんについて話しましょう。",
+        "hiragana": "きょうの ごめんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang maaf hari ini."
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "kanji": "申し訳ありません",
+    "hiragana": "もうしわけありません",
+    "romaji": "moushiwake arimasen",
+    "meaning": "mohon maaf sebesar-besarnya",
+    "shortExample": "Mohon maaf atas bug ini.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Permintaan maaf formal ke klien atau atasan.",
+    "examples": [
+      {
+        "jp": "申し訳ありませんをお願いします。",
+        "hiragana": "もうしわけありませんを おねがいします。",
+        "id": "Tolong terkait mohon maaf sebesar-besarnya."
+      },
+      {
+        "jp": "申し訳ありませんは終わりましたか？",
+        "hiragana": "もうしわけありませんは おわりましたか？",
+        "id": "Apakah mohon maaf sebesar-besarnya sudah selesai?"
+      },
+      {
+        "jp": "今日の申し訳ありませんについて話しましょう。",
+        "hiragana": "きょうの もうしわけありませんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang mohon maaf sebesar-besarnya hari ini."
+      }
+    ]
+  },
+  {
+    "id": "67",
+    "kanji": "感謝",
+    "hiragana": "かんしゃ",
+    "romaji": "kansha",
+    "meaning": "terima kasih / apresiasi",
+    "shortExample": "Terima kasih banyak.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Bentuk apresiasi yang lebih formal.",
+    "examples": [
+      {
+        "jp": "感謝をお願いします。",
+        "hiragana": "かんしゃを おねがいします。",
+        "id": "Tolong terkait terima kasih / apresiasi."
+      },
+      {
+        "jp": "感謝は終わりましたか？",
+        "hiragana": "かんしゃは おわりましたか？",
+        "id": "Apakah terima kasih / apresiasi sudah selesai?"
+      },
+      {
+        "jp": "今日の感謝について話しましょう。",
+        "hiragana": "きょうの かんしゃについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang terima kasih / apresiasi hari ini."
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "kanji": "拝見",
+    "hiragana": "はいけん",
+    "romaji": "haiken",
+    "meaning": "melihat (formal)",
+    "shortExample": "Saya sudah lihat emailnya.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Bentuk humble (kenjougo) dari miru (melihat).",
+    "examples": [
+      {
+        "jp": "拝見をお願いします。",
+        "hiragana": "はいけんを おねがいします。",
+        "id": "Tolong terkait melihat (formal)."
+      },
+      {
+        "jp": "拝見は終わりましたか？",
+        "hiragana": "はいけんは おわりましたか？",
+        "id": "Apakah melihat (formal) sudah selesai?"
+      },
+      {
+        "jp": "今日の拝見について話しましょう。",
+        "hiragana": "きょうの はいけんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang melihat (formal) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "69",
+    "kanji": "伺う",
+    "hiragana": "うかがう",
+    "romaji": "ukagau",
+    "meaning": "bertanya/berkunjung (formal)",
+    "shortExample": "Saya ingin bertanya...",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Bentuk humble dari kiku (bertanya) atau iku (pergi).",
+    "examples": [
+      {
+        "jp": "伺うをお願いします。",
+        "hiragana": "うかがうを おねがいします。",
+        "id": "Tolong terkait bertanya/berkunjung (formal)."
+      },
+      {
+        "jp": "伺うは終わりましたか？",
+        "hiragana": "うかがうは おわりましたか？",
+        "id": "Apakah bertanya/berkunjung (formal) sudah selesai?"
+      },
+      {
+        "jp": "今日の伺うについて話しましょう。",
+        "hiragana": "きょうの うかがうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang bertanya/berkunjung (formal) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "kanji": "念のため",
+    "hiragana": "ねんのため",
+    "romaji": "nen no tame",
+    "meaning": "untuk berjaga-jaga",
+    "shortExample": "Saya cek sekali lagi untuk jaga-jaga.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Banyak dipakai orang Jepang untuk double-check sesuatu.",
+    "examples": [
+      {
+        "jp": "念のためをお願いします。",
+        "hiragana": "ねんのためを おねがいします。",
+        "id": "Tolong terkait untuk berjaga-jaga."
+      },
+      {
+        "jp": "念のためは終わりましたか？",
+        "hiragana": "ねんのためは おわりましたか？",
+        "id": "Apakah untuk berjaga-jaga sudah selesai?"
+      },
+      {
+        "jp": "今日の念のためについて話しましょう。",
+        "hiragana": "きょうの ねんのためについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang untuk berjaga-jaga hari ini."
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "kanji": "早速",
+    "hiragana": "さっそく",
+    "romaji": "sassoku",
+    "meaning": "dengan segera",
+    "shortExample": "Saya akan segera kerjakan.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Menunjukkan antusiasme atau respon cepat.",
+    "examples": [
+      {
+        "jp": "早速をお願いします。",
+        "hiragana": "さっそくを おねがいします。",
+        "id": "Tolong terkait dengan segera."
+      },
+      {
+        "jp": "早速は終わりましたか？",
+        "hiragana": "さっそくは おわりましたか？",
+        "id": "Apakah dengan segera sudah selesai?"
+      },
+      {
+        "jp": "今日の早速について話しましょう。",
+        "hiragana": "きょうの さっそくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang dengan segera hari ini."
+      }
+    ]
+  },
+  {
+    "id": "72",
+    "kanji": "至急",
+    "hiragana": "しきゅう",
+    "romaji": "shikyuu",
+    "meaning": "segera / urgent",
+    "shortExample": "Mohon balas secepatnya.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Ditulis di judul email jika sangat mendesak.",
+    "examples": [
+      {
+        "jp": "至急をお願いします。",
+        "hiragana": "しきゅうを おねがいします。",
+        "id": "Tolong terkait segera / urgent."
+      },
+      {
+        "jp": "至急は終わりましたか？",
+        "hiragana": "しきゅうは おわりましたか？",
+        "id": "Apakah segera / urgent sudah selesai?"
+      },
+      {
+        "jp": "今日の至急について話しましょう。",
+        "hiragana": "きょうの しきゅうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang segera / urgent hari ini."
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "kanji": "なるべく",
+    "hiragana": "なるべく",
+    "romaji": "narubeku",
+    "meaning": "sebisa mungkin",
+    "shortExample": "Sebisa mungkin hari ini.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Versi soft dari mendesak orang lain.",
+    "examples": [
+      {
+        "jp": "なるべくをお願いします。",
+        "hiragana": "なるべくを おねがいします。",
+        "id": "Tolong terkait sebisa mungkin."
+      },
+      {
+        "jp": "なるべくは終わりましたか？",
+        "hiragana": "なるべくは おわりましたか？",
+        "id": "Apakah sebisa mungkin sudah selesai?"
+      },
+      {
+        "jp": "今日のなるべくについて話しましょう。",
+        "hiragana": "きょうの なるべくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang sebisa mungkin hari ini."
+      }
+    ]
+  },
+  {
+    "id": "74",
+    "kanji": "引き続き",
+    "hiragana": "ひきつづき",
+    "romaji": "hikitsuzuki",
+    "meaning": "selanjutnya / terus",
+    "shortExample": "Mohon bantuannya terus.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Sering di akhir email: 'Hikitsuzuki yoroshiku onegaishimasu'.",
+    "examples": [
+      {
+        "jp": "引き続きをお願いします。",
+        "hiragana": "ひきつづきを おねがいします。",
+        "id": "Tolong terkait selanjutnya / terus."
+      },
+      {
+        "jp": "引き続きは終わりましたか？",
+        "hiragana": "ひきつづきは おわりましたか？",
+        "id": "Apakah selanjutnya / terus sudah selesai?"
+      },
+      {
+        "jp": "今日の引き続きについて話しましょう。",
+        "hiragana": "きょうの ひきつづきについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang selanjutnya / terus hari ini."
+      }
+    ]
+  },
+  {
+    "id": "75",
+    "kanji": "取り急ぎ",
+    "hiragana": "とりいそぎ",
+    "romaji": "toriisogi",
+    "meaning": "untuk sementara / quick update",
+    "shortExample": "Quick update saja.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Di akhir email saat memberi info cepat.",
+    "examples": [
+      {
+        "jp": "取り急ぎをお願いします。",
+        "hiragana": "とりいそぎを おねがいします。",
+        "id": "Tolong terkait untuk sementara / quick update."
+      },
+      {
+        "jp": "取り急ぎは終わりましたか？",
+        "hiragana": "とりいそぎは おわりましたか？",
+        "id": "Apakah untuk sementara / quick update sudah selesai?"
+      },
+      {
+        "jp": "今日の取り急ぎについて話しましょう。",
+        "hiragana": "きょうの とりいそぎについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang untuk sementara / quick update hari ini."
+      }
+    ]
+  },
+  {
+    "id": "76",
+    "kanji": "検討",
+    "hiragana": "けんとう",
+    "romaji": "kentou",
+    "meaning": "pertimbangan",
+    "shortExample": "Kami akan mempertimbangkannya.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Jawaban standar Jepang kalau belum bisa memutuskan.",
+    "examples": [
+      {
+        "jp": "検討をお願いします。",
+        "hiragana": "けんとうを おねがいします。",
+        "id": "Tolong terkait pertimbangan."
+      },
+      {
+        "jp": "検討は終わりましたか？",
+        "hiragana": "けんとうは おわりましたか？",
+        "id": "Apakah pertimbangan sudah selesai?"
+      },
+      {
+        "jp": "今日の検討について話しましょう。",
+        "hiragana": "きょうの けんとうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang pertimbangan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "kanji": "辞退",
+    "hiragana": "じたい",
+    "romaji": "jitai",
+    "meaning": "menolak",
+    "shortExample": "Saya tolak tawarannya.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Menolak halus sebuah tawaran.",
+    "examples": [
+      {
+        "jp": "辞退をお願いします。",
+        "hiragana": "じたいを おねがいします。",
+        "id": "Tolong terkait menolak."
+      },
+      {
+        "jp": "辞退は終わりましたか？",
+        "hiragana": "じたいは おわりましたか？",
+        "id": "Apakah menolak sudah selesai?"
+      },
+      {
+        "jp": "今日の辞退について話しましょう。",
+        "hiragana": "きょうの じたいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang menolak hari ini."
+      }
+    ]
+  },
+  {
+    "id": "78",
+    "kanji": "歓迎",
+    "hiragana": "かんげい",
+    "romaji": "kangei",
+    "meaning": "menyambut",
+    "shortExample": "Selamat datang di tim!",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Dipakai saat ada member baru (kangeikai).",
+    "examples": [
+      {
+        "jp": "歓迎をお願いします。",
+        "hiragana": "かんげいを おねがいします。",
+        "id": "Tolong terkait menyambut."
+      },
+      {
+        "jp": "歓迎は終わりましたか？",
+        "hiragana": "かんげいは おわりましたか？",
+        "id": "Apakah menyambut sudah selesai?"
+      },
+      {
+        "jp": "今日の歓迎について話しましょう。",
+        "hiragana": "きょうの かんげいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang menyambut hari ini."
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "kanji": "送付",
+    "hiragana": "そうふ",
+    "romaji": "soufu",
+    "meaning": "mengirim (dokumen)",
+    "shortExample": "Sudah saya kirim filenya.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Lebih formal dari 'okuru'.",
+    "examples": [
+      {
+        "jp": "送付をお願いします。",
+        "hiragana": "そうふを おねがいします。",
+        "id": "Tolong terkait mengirim (dokumen)."
+      },
+      {
+        "jp": "送付は終わりましたか？",
+        "hiragana": "そうふは おわりましたか？",
+        "id": "Apakah mengirim (dokumen) sudah selesai?"
+      },
+      {
+        "jp": "今日の送付について話しましょう。",
+        "hiragana": "きょうの そうふについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang mengirim (dokumen) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "80",
+    "kanji": "受領",
+    "hiragana": "じゅりょう",
+    "romaji": "juryou",
+    "meaning": "menerima (dokumen)",
+    "shortExample": "File sudah diterima.",
+    "category": "Komunikasi",
+    "level": "N4",
+    "tip": "Konfirmasi penerimaan dokumen/email.",
+    "examples": [
+      {
+        "jp": "受領をお願いします。",
+        "hiragana": "じゅりょうを おねがいします。",
+        "id": "Tolong terkait menerima (dokumen)."
+      },
+      {
+        "jp": "受領は終わりましたか？",
+        "hiragana": "じゅりょうは おわりましたか？",
+        "id": "Apakah menerima (dokumen) sudah selesai?"
+      },
+      {
+        "jp": "今日の受領について話しましょう。",
+        "hiragana": "きょうの じゅりょうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang menerima (dokumen) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "81",
     "kanji": "報告",
     "hiragana": "ほうこく",
     "romaji": "houkoku",
@@ -1150,7 +2270,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Lapor ke PM.",
     "category": "Report",
     "level": "N4",
-    "tip": "Penting dalam budaya Ho-Ren-So (Lapor, Hubungi, Konsultasi).",
+    "tip": "Penting dalam budaya Ho-Ren-So.",
     "examples": [
       {
         "jp": "報告をお願いします。",
@@ -1170,7 +2290,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "42",
+    "id": "82",
     "kanji": "提出",
     "hiragana": "ていしゅつ",
     "romaji": "teishutsu",
@@ -1178,7 +2298,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Kumpulkan laporannya.",
     "category": "Report",
     "level": "N4",
-    "tip": "Mengirimkan dokumen atau tugas yang sudah selesai.",
+    "tip": "Mengirimkan dokumen atau tugas.",
     "examples": [
       {
         "jp": "提出をお願いします。",
@@ -1198,7 +2318,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "43",
+    "id": "83",
     "kanji": "納期",
     "hiragana": "のうき",
     "romaji": "nouki",
@@ -1206,7 +2326,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Kapan deadlinenya?",
     "category": "Report",
     "level": "N4",
-    "tip": "Sangat krusial di perusahaan IT Jepang. Jangan sampai telat!",
+    "tip": "Sangat krusial di perusahaan IT Jepang.",
     "examples": [
       {
         "jp": "納期をお願いします。",
@@ -1226,7 +2346,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "44",
+    "id": "84",
     "kanji": "承認",
     "hiragana": "しょうにん",
     "romaji": "shounin",
@@ -1234,7 +2354,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Menunggu approval.",
     "category": "Report",
     "level": "N4",
-    "tip": "Biasanya butuh hanko (stempel) atau klik approve di sistem.",
+    "tip": "Biasanya butuh stempel atau klik approve.",
     "examples": [
       {
         "jp": "承認をお願いします。",
@@ -1254,7 +2374,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "45",
+    "id": "85",
     "kanji": "復旧",
     "hiragana": "ふっきゅう",
     "romaji": "fukkyuu",
@@ -1282,7 +2402,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "46",
+    "id": "86",
     "kanji": "概要",
     "hiragana": "がいよう",
     "romaji": "gaiyou",
@@ -1290,7 +2410,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Berikut overviewnya.",
     "category": "Report",
     "level": "N4",
-    "tip": "Penjelasan singkat di awal presentasi atau dokumen.",
+    "tip": "Penjelasan singkat di awal presentasi.",
     "examples": [
       {
         "jp": "概要をお願いします。",
@@ -1310,7 +2430,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "47",
+    "id": "87",
     "kanji": "解決",
     "hiragana": "かいけつ",
     "romaji": "kaiketsu",
@@ -1338,7 +2458,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "48",
+    "id": "88",
     "kanji": "実績",
     "hiragana": "じっせき",
     "romaji": "jisseki",
@@ -1366,7 +2486,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "49",
+    "id": "89",
     "kanji": "分析",
     "hiragana": "ぶんせき",
     "romaji": "bunseki",
@@ -1394,7 +2514,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "50",
+    "id": "90",
     "kanji": "日報",
     "hiragana": "にっぽう",
     "romaji": "nippou",
@@ -1402,7 +2522,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Sudah kirim daily report?",
     "category": "Report",
     "level": "N4",
-    "tip": "Banyak perusahaan Jepang mewajibkan karyawannya menulis ini tiap pulang kerja.",
+    "tip": "Sering diwajibkan tiap pulang kerja.",
     "examples": [
       {
         "jp": "日報をお願いします。",
@@ -1422,7 +2542,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "51",
+    "id": "91",
     "kanji": "週報",
     "hiragana": "しゅうほう",
     "romaji": "shuuhou",
@@ -1450,7 +2570,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "52",
+    "id": "92",
     "kanji": "月報",
     "hiragana": "げっぽう",
     "romaji": "geppou",
@@ -1478,7 +2598,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "53",
+    "id": "93",
     "kanji": "課題",
     "hiragana": "かだい",
     "romaji": "kadai",
@@ -1486,7 +2606,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Ini isu saat ini.",
     "category": "Report",
     "level": "N4",
-    "tip": "Masalah yang harus diselesaikan (task/issue).",
+    "tip": "Masalah yang harus diselesaikan.",
     "examples": [
       {
         "jp": "課題をお願いします。",
@@ -1506,7 +2626,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "54",
+    "id": "94",
     "kanji": "進み具合",
     "hiragana": "すすみぐあい",
     "romaji": "susumiguai",
@@ -1514,7 +2634,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Bagaimana progressnya?",
     "category": "Report",
     "level": "N4",
-    "tip": "Sinonim dari Shinchoku (進捗).",
+    "tip": "Sinonim dari Shinchoku.",
     "examples": [
       {
         "jp": "進み具合をお願いします。",
@@ -1534,7 +2654,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "55",
+    "id": "95",
     "kanji": "資料",
     "hiragana": "しりょう",
     "romaji": "shiryou",
@@ -1562,7 +2682,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "56",
+    "id": "96",
     "kanji": "記録",
     "hiragana": "きろく",
     "romaji": "kiroku",
@@ -1590,7 +2710,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "57",
+    "id": "97",
     "kanji": "対象",
     "hiragana": "たいしょう",
     "romaji": "taishou",
@@ -1618,7 +2738,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "58",
+    "id": "98",
     "kanji": "結果",
     "hiragana": "けっか",
     "romaji": "kekka",
@@ -1646,7 +2766,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "59",
+    "id": "99",
     "kanji": "状況",
     "hiragana": "じょうきょう",
     "romaji": "joukyou",
@@ -1674,7 +2794,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "60",
+    "id": "100",
     "kanji": "評価",
     "hiragana": "ひょうか",
     "romaji": "hyouka",
@@ -1702,7 +2822,567 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "61",
+    "id": "101",
+    "kanji": "改善",
+    "hiragana": "かいぜん",
+    "romaji": "kaizen",
+    "meaning": "perbaikan (improvement)",
+    "shortExample": "Mari perbaiki UI-nya.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Konsep Kaizen Jepang (Continuous Improvement).",
+    "examples": [
+      {
+        "jp": "改善をお願いします。",
+        "hiragana": "かいぜんを おねがいします。",
+        "id": "Tolong terkait perbaikan (improvement)."
+      },
+      {
+        "jp": "改善は終わりましたか？",
+        "hiragana": "かいぜんは おわりましたか？",
+        "id": "Apakah perbaikan (improvement) sudah selesai?"
+      },
+      {
+        "jp": "今日の改善について話しましょう。",
+        "hiragana": "きょうの かいぜんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang perbaikan (improvement) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "102",
+    "kanji": "原因究明",
+    "hiragana": "げんいんきゅうめい",
+    "romaji": "gen'inkyuumei",
+    "meaning": "investigasi penyebab",
+    "shortExample": "Sedang mencari tahu penyebab error.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Root cause analysis.",
+    "examples": [
+      {
+        "jp": "原因究明をお願いします。",
+        "hiragana": "げんいんきゅうめいを おねがいします。",
+        "id": "Tolong terkait investigasi penyebab."
+      },
+      {
+        "jp": "原因究明は終わりましたか？",
+        "hiragana": "げんいんきゅうめいは おわりましたか？",
+        "id": "Apakah investigasi penyebab sudah selesai?"
+      },
+      {
+        "jp": "今日の原因究明について話しましょう。",
+        "hiragana": "きょうの げんいんきゅうめいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang investigasi penyebab hari ini."
+      }
+    ]
+  },
+  {
+    "id": "103",
+    "kanji": "対策",
+    "hiragana": "たいさく",
+    "romaji": "taisaku",
+    "meaning": "tindakan pencegahan / solusi",
+    "shortExample": "Apa tindakan preventifnya?",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Agar bug serupa tidak terulang.",
+    "examples": [
+      {
+        "jp": "対策をお願いします。",
+        "hiragana": "たいさくを おねがいします。",
+        "id": "Tolong terkait tindakan pencegahan / solusi."
+      },
+      {
+        "jp": "対策は終わりましたか？",
+        "hiragana": "たいさくは おわりましたか？",
+        "id": "Apakah tindakan pencegahan / solusi sudah selesai?"
+      },
+      {
+        "jp": "今日の対策について話しましょう。",
+        "hiragana": "きょうの たいさくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang tindakan pencegahan / solusi hari ini."
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "kanji": "比較",
+    "hiragana": "ひかく",
+    "romaji": "ひかく",
+    "meaning": "perbandingan",
+    "shortExample": "Bandingkan dengan data lama.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Komparasi A/B testing.",
+    "examples": [
+      {
+        "jp": "比較をお願いします。",
+        "hiragana": "ひかくを おねがいします。",
+        "id": "Tolong terkait perbandingan."
+      },
+      {
+        "jp": "比較は終わりましたか？",
+        "hiragana": "ひかくは おわりましたか？",
+        "id": "Apakah perbandingan sudah selesai?"
+      },
+      {
+        "jp": "今日の比較について話しましょう。",
+        "hiragana": "きょうの ひかくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang perbandingan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "105",
+    "kanji": "結論",
+    "hiragana": "けつろん",
+    "romaji": "ketsuron",
+    "meaning": "kesimpulan",
+    "shortExample": "Kesimpulannya adalah...",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Poin akhir dari presentasi.",
+    "examples": [
+      {
+        "jp": "結論をお願いします。",
+        "hiragana": "けつろんを おねがいします。",
+        "id": "Tolong terkait kesimpulan."
+      },
+      {
+        "jp": "結論は終わりましたか？",
+        "hiragana": "けつろんは おわりましたか？",
+        "id": "Apakah kesimpulan sudah selesai?"
+      },
+      {
+        "jp": "今日の結論について話しましょう。",
+        "hiragana": "きょうの けつろんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kesimpulan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "106",
+    "kanji": "目的",
+    "hiragana": "もくてき",
+    "romaji": "mokuteki",
+    "meaning": "tujuan",
+    "shortExample": "Apa tujuan project ini?",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Objective utama.",
+    "examples": [
+      {
+        "jp": "目的をお願いします。",
+        "hiragana": "もくてきを おねがいします。",
+        "id": "Tolong terkait tujuan."
+      },
+      {
+        "jp": "目的は終わりましたか？",
+        "hiragana": "もくてきは おわりましたか？",
+        "id": "Apakah tujuan sudah selesai?"
+      },
+      {
+        "jp": "今日の目的について話しましょう。",
+        "hiragana": "きょうの もくてきについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang tujuan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "kanji": "目安",
+    "hiragana": "めやす",
+    "romaji": "meyasu",
+    "meaning": "perkiraan kasar / rule of thumb",
+    "shortExample": "Perkiraannya sekitar 2 minggu.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Estimasi yang tidak mengikat.",
+    "examples": [
+      {
+        "jp": "目安をお願いします。",
+        "hiragana": "めやすを おねがいします。",
+        "id": "Tolong terkait perkiraan kasar / rule of thumb."
+      },
+      {
+        "jp": "目安は終わりましたか？",
+        "hiragana": "めやすは おわりましたか？",
+        "id": "Apakah perkiraan kasar / rule of thumb sudah selesai?"
+      },
+      {
+        "jp": "今日の目安について話しましょう。",
+        "hiragana": "きょうの めやすについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang perkiraan kasar / rule of thumb hari ini."
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "kanji": "範囲",
+    "hiragana": "はんい",
+    "romaji": "han'i",
+    "meaning": "cakupan / scope",
+    "shortExample": "Scope testingnya di mana?",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Scope of work / boundary.",
+    "examples": [
+      {
+        "jp": "範囲をお願いします。",
+        "hiragana": "はんいを おねがいします。",
+        "id": "Tolong terkait cakupan / scope."
+      },
+      {
+        "jp": "範囲は終わりましたか？",
+        "hiragana": "はんいは おわりましたか？",
+        "id": "Apakah cakupan / scope sudah selesai?"
+      },
+      {
+        "jp": "今日の範囲について話しましょう。",
+        "hiragana": "きょうの はんいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang cakupan / scope hari ini."
+      }
+    ]
+  },
+  {
+    "id": "109",
+    "kanji": "規模",
+    "hiragana": "きぼ",
+    "romaji": "kibo",
+    "meaning": "skala / size",
+    "shortExample": "Skala projectnya besar.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Ukuran dari sesuatu.",
+    "examples": [
+      {
+        "jp": "規模をお願いします。",
+        "hiragana": "きぼを おねがいします。",
+        "id": "Tolong terkait skala / size."
+      },
+      {
+        "jp": "規模は終わりましたか？",
+        "hiragana": "きぼは おわりましたか？",
+        "id": "Apakah skala / size sudah selesai?"
+      },
+      {
+        "jp": "今日の規模について話しましょう。",
+        "hiragana": "きょうの きぼについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang skala / size hari ini."
+      }
+    ]
+  },
+  {
+    "id": "110",
+    "kanji": "方針",
+    "hiragana": "ほうしん",
+    "romaji": "houshin",
+    "meaning": "kebijakan / policy / arah",
+    "shortExample": "Arahan dari manajemen.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Direction atau aturan perusahaan.",
+    "examples": [
+      {
+        "jp": "方針をお願いします。",
+        "hiragana": "ほうしんを おねがいします。",
+        "id": "Tolong terkait kebijakan / policy / arah."
+      },
+      {
+        "jp": "方針は終わりましたか？",
+        "hiragana": "ほうしんは おわりましたか？",
+        "id": "Apakah kebijakan / policy / arah sudah selesai?"
+      },
+      {
+        "jp": "今日の方針について話しましょう。",
+        "hiragana": "きょうの ほうしんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kebijakan / policy / arah hari ini."
+      }
+    ]
+  },
+  {
+    "id": "111",
+    "kanji": "見通し",
+    "hiragana": "みとおし",
+    "romaji": "mitooshi",
+    "meaning": "prospek / pandangan ke depan",
+    "shortExample": "Kelihatannya akan rilis bulan depan.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Estimasi atau pandangan ke depan.",
+    "examples": [
+      {
+        "jp": "見通しをお願いします。",
+        "hiragana": "みとおしを おねがいします。",
+        "id": "Tolong terkait prospek / pandangan ke depan."
+      },
+      {
+        "jp": "見通しは終わりましたか？",
+        "hiragana": "みとおしは おわりましたか？",
+        "id": "Apakah prospek / pandangan ke depan sudah selesai?"
+      },
+      {
+        "jp": "今日の見通しについて話しましょう。",
+        "hiragana": "きょうの みとおしについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang prospek / pandangan ke depan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "112",
+    "kanji": "懸念",
+    "hiragana": "けねん",
+    "romaji": "kenen",
+    "meaning": "kekhawatiran (concern)",
+    "shortExample": "Ada concern soal security.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Resiko atau hal yang dikhawatirkan.",
+    "examples": [
+      {
+        "jp": "懸念をお願いします。",
+        "hiragana": "けねんを おねがいします。",
+        "id": "Tolong terkait kekhawatiran (concern)."
+      },
+      {
+        "jp": "懸念は終わりましたか？",
+        "hiragana": "けねんは おわりましたか？",
+        "id": "Apakah kekhawatiran (concern) sudah selesai?"
+      },
+      {
+        "jp": "今日の懸念について話しましょう。",
+        "hiragana": "きょうの けねんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kekhawatiran (concern) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "113",
+    "kanji": "リスク",
+    "hiragana": "りすく",
+    "romaji": "risuku",
+    "meaning": "risiko",
+    "shortExample": "Resikonya terlalu tinggi.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Manajemen risiko proyek.",
+    "examples": [
+      {
+        "jp": "リスクをお願いします。",
+        "hiragana": "りすくを おねがいします。",
+        "id": "Tolong terkait risiko."
+      },
+      {
+        "jp": "リスクは終わりましたか？",
+        "hiragana": "りすくは おわりましたか？",
+        "id": "Apakah risiko sudah selesai?"
+      },
+      {
+        "jp": "今日のリスクについて話しましょう。",
+        "hiragana": "きょうの りすくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang risiko hari ini."
+      }
+    ]
+  },
+  {
+    "id": "114",
+    "kanji": "効果",
+    "hiragana": "こうか",
+    "romaji": "kouka",
+    "meaning": "efek / hasil",
+    "shortExample": "Efeknya sangat bagus.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Hasil positif dari sebuah implementasi.",
+    "examples": [
+      {
+        "jp": "効果をお願いします。",
+        "hiragana": "こうかを おねがいします。",
+        "id": "Tolong terkait efek / hasil."
+      },
+      {
+        "jp": "効果は終わりましたか？",
+        "hiragana": "こうかは おわりましたか？",
+        "id": "Apakah efek / hasil sudah selesai?"
+      },
+      {
+        "jp": "今日の効果について話しましょう。",
+        "hiragana": "きょうの こうかについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang efek / hasil hari ini."
+      }
+    ]
+  },
+  {
+    "id": "115",
+    "kanji": "減少",
+    "hiragana": "げんしょう",
+    "romaji": "genshou",
+    "meaning": "penurunan",
+    "shortExample": "Jumlah bug menurun.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Penurunan grafik metrik.",
+    "examples": [
+      {
+        "jp": "減少をお願いします。",
+        "hiragana": "げんしょうを おねがいします。",
+        "id": "Tolong terkait penurunan."
+      },
+      {
+        "jp": "減少は終わりましたか？",
+        "hiragana": "げんしょうは おわりましたか？",
+        "id": "Apakah penurunan sudah selesai?"
+      },
+      {
+        "jp": "今日の減少について話しましょう。",
+        "hiragana": "きょうの げんしょうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang penurunan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "116",
+    "kanji": "増加",
+    "hiragana": "ぞうか",
+    "romaji": "zouka",
+    "meaning": "peningkatan",
+    "shortExample": "Traffic user meningkat.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Peningkatan grafik metrik.",
+    "examples": [
+      {
+        "jp": "増加をお願いします。",
+        "hiragana": "ぞうかを おねがいします。",
+        "id": "Tolong terkait peningkatan."
+      },
+      {
+        "jp": "増加は終わりましたか？",
+        "hiragana": "ぞうかは おわりましたか？",
+        "id": "Apakah peningkatan sudah selesai?"
+      },
+      {
+        "jp": "今日の増加について話しましょう。",
+        "hiragana": "きょうの ぞうかについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang peningkatan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "117",
+    "kanji": "不足",
+    "hiragana": "ふそく",
+    "romaji": "fusoku",
+    "meaning": "kekurangan",
+    "shortExample": "Resource kita kurang.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Kekurangan budget, orang, atau waktu.",
+    "examples": [
+      {
+        "jp": "不足をお願いします。",
+        "hiragana": "ふそくを おねがいします。",
+        "id": "Tolong terkait kekurangan."
+      },
+      {
+        "jp": "不足は終わりましたか？",
+        "hiragana": "ふそくは おわりましたか？",
+        "id": "Apakah kekurangan sudah selesai?"
+      },
+      {
+        "jp": "今日の不足について話しましょう。",
+        "hiragana": "きょうの ふそくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kekurangan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "118",
+    "kanji": "予算",
+    "hiragana": "よさん",
+    "romaji": "yosan",
+    "meaning": "anggaran / budget",
+    "shortExample": "Budgetnya habis.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Terkait keuangan project.",
+    "examples": [
+      {
+        "jp": "予算をお願いします。",
+        "hiragana": "よさんを おねがいします。",
+        "id": "Tolong terkait anggaran / budget."
+      },
+      {
+        "jp": "予算は終わりましたか？",
+        "hiragana": "よさんは おわりましたか？",
+        "id": "Apakah anggaran / budget sudah selesai?"
+      },
+      {
+        "jp": "今日の予算について話しましょう。",
+        "hiragana": "きょうの よさんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang anggaran / budget hari ini."
+      }
+    ]
+  },
+  {
+    "id": "119",
+    "kanji": "利益",
+    "hiragana": "りえき",
+    "romaji": "rieki",
+    "meaning": "keuntungan / profit",
+    "shortExample": "Profit tahun ini naik.",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Fokus utama perusahaan.",
+    "examples": [
+      {
+        "jp": "利益をお願いします。",
+        "hiragana": "りえきを おねがいします。",
+        "id": "Tolong terkait keuntungan / profit."
+      },
+      {
+        "jp": "利益は終わりましたか？",
+        "hiragana": "りえきは おわりましたか？",
+        "id": "Apakah keuntungan / profit sudah selesai?"
+      },
+      {
+        "jp": "今日の利益について話しましょう。",
+        "hiragana": "きょうの りえきについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang keuntungan / profit hari ini."
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "kanji": "目標達成",
+    "hiragana": "もくひょうたっせい",
+    "romaji": "mokuhyoutassei",
+    "meaning": "mencapai target",
+    "shortExample": "Target tercapai!",
+    "category": "Report",
+    "level": "N4",
+    "tip": "Laporan keberhasilan (KPI Met).",
+    "examples": [
+      {
+        "jp": "目標達成をお願いします。",
+        "hiragana": "もくひょうたっせいを おねがいします。",
+        "id": "Tolong terkait mencapai target."
+      },
+      {
+        "jp": "目標達成は終わりましたか？",
+        "hiragana": "もくひょうたっせいは おわりましたか？",
+        "id": "Apakah mencapai target sudah selesai?"
+      },
+      {
+        "jp": "今日の目標達成について話しましょう。",
+        "hiragana": "きょうの もくひょうたっせいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang mencapai target hari ini."
+      }
+    ]
+  },
+  {
+    "id": "121",
     "kanji": "進捗",
     "hiragana": "しんちょく",
     "romaji": "shinchoku",
@@ -1710,17 +3390,17 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Bagaimana progressnya?",
     "category": "Standup",
     "level": "N4",
-    "tip": "Kata wajib saat daily standup untuk melaporkan status tiket.",
+    "tip": "Kata wajib saat daily standup untuk melaporkan status.",
     "examples": [
       {
-        "jp": "進捗を共有します。",
-        "hiragana": "しんちょくを きょうゆうします。",
-        "id": "Saya akan membagikan progress pekerjaan."
+        "jp": "進捗をお願いします。",
+        "hiragana": "しんちょくを おねがいします。",
+        "id": "Tolong terkait progress pekerjaan."
       },
       {
-        "jp": "現在の進捗はどうですか？",
-        "hiragana": "げんざいの しんちょくは どうですか？",
-        "id": "Bagaimana progress saat ini?"
+        "jp": "進捗は終わりましたか？",
+        "hiragana": "しんちょくは おわりましたか？",
+        "id": "Apakah progress pekerjaan sudah selesai?"
       },
       {
         "jp": "今日の進捗について話しましょう。",
@@ -1730,7 +3410,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "62",
+    "id": "122",
     "kanji": "会議",
     "hiragana": "かいぎ",
     "romaji": "kaigi",
@@ -1738,17 +3418,17 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Meeting jam 10.",
     "category": "Standup",
     "level": "N5",
-    "tip": "Gunakan untuk menyebut jadwal meeting harian atau mingguan.",
+    "tip": "Jadwal meeting harian.",
     "examples": [
       {
-        "jp": "会議は10時からです。",
-        "hiragana": "かいぎは じゅうじからです。",
-        "id": "Meeting dimulai dari jam 10."
+        "jp": "会議をお願いします。",
+        "hiragana": "かいぎを おねがいします。",
+        "id": "Tolong terkait meeting / rapat."
       },
       {
-        "jp": "会議室を予約しました。",
-        "hiragana": "かいぎしつを よやくしました。",
-        "id": "Saya sudah memesan ruang meeting."
+        "jp": "会議は終わりましたか？",
+        "hiragana": "かいぎは おわりましたか？",
+        "id": "Apakah meeting / rapat sudah selesai?"
       },
       {
         "jp": "今日の会議について話しましょう。",
@@ -1758,7 +3438,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "63",
+    "id": "123",
     "kanji": "変更",
     "hiragana": "へんこう",
     "romaji": "henkou",
@@ -1786,7 +3466,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "64",
+    "id": "124",
     "kanji": "完了",
     "hiragana": "かんりょう",
     "romaji": "kanryou",
@@ -1814,7 +3494,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "65",
+    "id": "125",
     "kanji": "保留",
     "hiragana": "ほりゅう",
     "romaji": "horyuu",
@@ -1822,7 +3502,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Task ini di-pending.",
     "category": "Standup",
     "level": "N4",
-    "tip": "Tiket ditahan karena menunggu blocker lain.",
+    "tip": "Tiket ditahan karena menunggu blocker.",
     "examples": [
       {
         "jp": "保留をお願いします。",
@@ -1842,7 +3522,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "66",
+    "id": "126",
     "kanji": "追加",
     "hiragana": "ついか",
     "romaji": "tsuika",
@@ -1850,7 +3530,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Ada tambahan fitur.",
     "category": "Standup",
     "level": "N4",
-    "tip": "Scope creep! Beritahu tim jika ada tambahan kerjaan.",
+    "tip": "Scope creep! Beritahu tim jika ada tambahan.",
     "examples": [
       {
         "jp": "追加をお願いします。",
@@ -1870,7 +3550,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "67",
+    "id": "127",
     "kanji": "見積",
     "hiragana": "みつもり",
     "romaji": "mitsumori",
@@ -1878,7 +3558,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Estimasi waktunya 3 hari.",
     "category": "Standup",
     "level": "N4",
-    "tip": "Berapa story point atau jam untuk tiket ini?",
+    "tip": "Berapa story point untuk tiket ini?",
     "examples": [
       {
         "jp": "見積をお願いします。",
@@ -1898,7 +3578,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "68",
+    "id": "128",
     "kanji": "更新",
     "hiragana": "こうしん",
     "romaji": "koushin",
@@ -1906,7 +3586,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Update data terbaru.",
     "category": "Standup",
     "level": "N4",
-    "tip": "Memperbarui dokumentasi atau tiket.",
+    "tip": "Memperbarui tiket Jira/Trello.",
     "examples": [
       {
         "jp": "更新をお願いします。",
@@ -1926,7 +3606,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "69",
+    "id": "129",
     "kanji": "予定",
     "hiragana": "よてい",
     "romaji": "yotei",
@@ -1954,7 +3634,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "70",
+    "id": "130",
     "kanji": "遅延",
     "hiragana": "ちえん",
     "romaji": "chien",
@@ -1982,7 +3662,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "71",
+    "id": "131",
     "kanji": "昨日",
     "hiragana": "きのう",
     "romaji": "kinou",
@@ -1990,7 +3670,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Kemarin kerjain API.",
     "category": "Standup",
     "level": "N5",
-    "tip": "Format standar standup: Apa yang dikerjakan kemarin.",
+    "tip": "Format standar standup.",
     "examples": [
       {
         "jp": "昨日をお願いします。",
@@ -2010,7 +3690,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "72",
+    "id": "132",
     "kanji": "今日",
     "hiragana": "きょう",
     "romaji": "kyou",
@@ -2018,7 +3698,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Hari ini fix bug.",
     "category": "Standup",
     "level": "N5",
-    "tip": "Format standar standup: Apa yang akan dikerjakan hari ini.",
+    "tip": "Format standar standup.",
     "examples": [
       {
         "jp": "今日をお願いします。",
@@ -2038,7 +3718,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "73",
+    "id": "133",
     "kanji": "明日",
     "hiragana": "あした",
     "romaji": "ashita",
@@ -2046,7 +3726,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Besok saya cuti.",
     "category": "Standup",
     "level": "N5",
-    "tip": "Memberi tahu rencana untuk besok.",
+    "tip": "Memberi tahu rencana besok.",
     "examples": [
       {
         "jp": "明日をお願いします。",
@@ -2066,7 +3746,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "74",
+    "id": "134",
     "kanji": "問題",
     "hiragana": "もんだい",
     "romaji": "mondai",
@@ -2074,7 +3754,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Ada blocker.",
     "category": "Standup",
     "level": "N5",
-    "tip": "Format standar standup: Apakah ada blocker/masalah?",
+    "tip": "Apakah ada blocker/masalah?",
     "examples": [
       {
         "jp": "問題をお願いします。",
@@ -2094,7 +3774,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "75",
+    "id": "135",
     "kanji": "目標",
     "hiragana": "もくひょう",
     "romaji": "mokuhyou",
@@ -2122,7 +3802,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "76",
+    "id": "136",
     "kanji": "開始",
     "hiragana": "かいし",
     "romaji": "kaishi",
@@ -2150,7 +3830,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "77",
+    "id": "137",
     "kanji": "終了",
     "hiragana": "しゅうりょう",
     "romaji": "shuuryou",
@@ -2178,7 +3858,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "78",
+    "id": "138",
     "kanji": "順調",
     "hiragana": "じゅんちょう",
     "romaji": "junchou",
@@ -2206,7 +3886,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "79",
+    "id": "139",
     "kanji": "調整",
     "hiragana": "ちょうせい",
     "romaji": "chousei",
@@ -2214,7 +3894,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Adjust jadwal rilis.",
     "category": "Standup",
     "level": "N4",
-    "tip": "Menjadwalkan ulang atau menegosiasikan scope.",
+    "tip": "Menjadwalkan ulang.",
     "examples": [
       {
         "jp": "調整をお願いします。",
@@ -2234,7 +3914,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "80",
+    "id": "140",
     "kanji": "引き続き",
     "hiragana": "ひきつづき",
     "romaji": "hikitsuzuki",
@@ -2242,7 +3922,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Lanjut task kemarin.",
     "category": "Standup",
     "level": "N4",
-    "tip": "Sering diucapkan: \"Hari ini saya melanjutkan task kemarin\".",
+    "tip": "Sering diucapkan saat melanjutkan kerjaan kemarin.",
     "examples": [
       {
         "jp": "引き続きをお願いします。",
@@ -2262,7 +3942,567 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "81",
+    "id": "141",
+    "kanji": "着手",
+    "hiragana": "ちゃくしゅ",
+    "romaji": "chakushu",
+    "meaning": "mulai dikerjakan (start working)",
+    "shortExample": "Mulai kerjakan tiket B.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Lebih profesional dari 'mulai'.",
+    "examples": [
+      {
+        "jp": "着手をお願いします。",
+        "hiragana": "ちゃくしゅを おねがいします。",
+        "id": "Tolong terkait mulai dikerjakan (start working)."
+      },
+      {
+        "jp": "着手は終わりましたか？",
+        "hiragana": "ちゃくしゅは おわりましたか？",
+        "id": "Apakah mulai dikerjakan (start working) sudah selesai?"
+      },
+      {
+        "jp": "今日の着手について話しましょう。",
+        "hiragana": "きょうの ちゃくしゅについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang mulai dikerjakan (start working) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "142",
+    "kanji": "予定通り",
+    "hiragana": "よていどおり",
+    "romaji": "yoteidoori",
+    "meaning": "sesuai rencana",
+    "shortExample": "Sesuai rencana, tidak ada delay.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Kondisi ideal.",
+    "examples": [
+      {
+        "jp": "予定通りをお願いします。",
+        "hiragana": "よていどおりを おねがいします。",
+        "id": "Tolong terkait sesuai rencana."
+      },
+      {
+        "jp": "予定通りは終わりましたか？",
+        "hiragana": "よていどおりは おわりましたか？",
+        "id": "Apakah sesuai rencana sudah selesai?"
+      },
+      {
+        "jp": "今日の予定通りについて話しましょう。",
+        "hiragana": "きょうの よていどおりについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang sesuai rencana hari ini."
+      }
+    ]
+  },
+  {
+    "id": "143",
+    "kanji": "前倒し",
+    "hiragana": "まえだおし",
+    "romaji": "maedaoshi",
+    "meaning": "lebih awal dari jadwal",
+    "shortExample": "Rilis lebih awal.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Luar biasa, task selesai lebih cepat.",
+    "examples": [
+      {
+        "jp": "前倒しをお願いします。",
+        "hiragana": "まえだおしを おねがいします。",
+        "id": "Tolong terkait lebih awal dari jadwal."
+      },
+      {
+        "jp": "前倒しは終わりましたか？",
+        "hiragana": "まえだおしは おわりましたか？",
+        "id": "Apakah lebih awal dari jadwal sudah selesai?"
+      },
+      {
+        "jp": "今日の前倒しについて話しましょう。",
+        "hiragana": "きょうの まえだおしについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang lebih awal dari jadwal hari ini."
+      }
+    ]
+  },
+  {
+    "id": "144",
+    "kanji": "後ろ倒し",
+    "hiragana": "うしろだおし",
+    "romaji": "ushirodaoshi",
+    "meaning": "diundur",
+    "shortExample": "Jadwalnya diundur.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Karena ada blocker, jadwal dimundurkan.",
+    "examples": [
+      {
+        "jp": "後ろ倒しをお願いします。",
+        "hiragana": "うしろだおしを おねがいします。",
+        "id": "Tolong terkait diundur."
+      },
+      {
+        "jp": "後ろ倒しは終わりましたか？",
+        "hiragana": "うしろだおしは おわりましたか？",
+        "id": "Apakah diundur sudah selesai?"
+      },
+      {
+        "jp": "今日の後ろ倒しについて話しましょう。",
+        "hiragana": "きょうの うしろだおしについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang diundur hari ini."
+      }
+    ]
+  },
+  {
+    "id": "145",
+    "kanji": "優先順位",
+    "hiragana": "ゆうせんじゅんい",
+    "romaji": "yuusenjun'i",
+    "meaning": "prioritas",
+    "shortExample": "Prioritasnya diubah.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Priority order di backlog.",
+    "examples": [
+      {
+        "jp": "優先順位をお願いします。",
+        "hiragana": "ゆうせんじゅんいを おねがいします。",
+        "id": "Tolong terkait prioritas."
+      },
+      {
+        "jp": "優先順位は終わりましたか？",
+        "hiragana": "ゆうせんじゅんいは おわりましたか？",
+        "id": "Apakah prioritas sudah selesai?"
+      },
+      {
+        "jp": "今日の優先順位について話しましょう。",
+        "hiragana": "きょうの ゆうせんじゅんいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang prioritas hari ini."
+      }
+    ]
+  },
+  {
+    "id": "146",
+    "kanji": "手戻り",
+    "hiragana": "てもどり",
+    "romaji": "temodori",
+    "meaning": "mengulang kerjaan / rework",
+    "shortExample": "Ada rework dari QA.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Hal yang paling dibenci developer.",
+    "examples": [
+      {
+        "jp": "手戻りをお願いします。",
+        "hiragana": "てもどりを おねがいします。",
+        "id": "Tolong terkait mengulang kerjaan / rework."
+      },
+      {
+        "jp": "手戻りは終わりましたか？",
+        "hiragana": "てもどりは おわりましたか？",
+        "id": "Apakah mengulang kerjaan / rework sudah selesai?"
+      },
+      {
+        "jp": "今日の手戻りについて話しましょう。",
+        "hiragana": "きょうの てもどりについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang mengulang kerjaan / rework hari ini."
+      }
+    ]
+  },
+  {
+    "id": "147",
+    "kanji": "差し戻し",
+    "hiragana": "さしもどし",
+    "romaji": "sashimodoshi",
+    "meaning": "dikembalikan / direject",
+    "shortExample": "PR-nya di-reject.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Kembali ke status sebelumnya.",
+    "examples": [
+      {
+        "jp": "差し戻しをお願いします。",
+        "hiragana": "さしもどしを おねがいします。",
+        "id": "Tolong terkait dikembalikan / direject."
+      },
+      {
+        "jp": "差し戻しは終わりましたか？",
+        "hiragana": "さしもどしは おわりましたか？",
+        "id": "Apakah dikembalikan / direject sudah selesai?"
+      },
+      {
+        "jp": "今日の差し戻しについて話しましょう。",
+        "hiragana": "きょうの さしもどしについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang dikembalikan / direject hari ini."
+      }
+    ]
+  },
+  {
+    "id": "148",
+    "kanji": "取り消し",
+    "hiragana": "とりけし",
+    "romaji": "torikeshi",
+    "meaning": "dibatalkan / cancel",
+    "shortExample": "Rilisnya di-cancel.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Pembatalan.",
+    "examples": [
+      {
+        "jp": "取り消しをお願いします。",
+        "hiragana": "とりけしを おねがいします。",
+        "id": "Tolong terkait dibatalkan / cancel."
+      },
+      {
+        "jp": "取り消しは終わりましたか？",
+        "hiragana": "とりけしは おわりましたか？",
+        "id": "Apakah dibatalkan / cancel sudah selesai?"
+      },
+      {
+        "jp": "今日の取り消しについて話しましょう。",
+        "hiragana": "きょうの とりけしについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang dibatalkan / cancel hari ini."
+      }
+    ]
+  },
+  {
+    "id": "149",
+    "kanji": "手待ち",
+    "hiragana": "てまち",
+    "romaji": "temachi",
+    "meaning": "menunggu (idle)",
+    "shortExample": "Lagi nunggu review (idle).",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Sedang tidak ada kerjaan karena nunggu orang lain.",
+    "examples": [
+      {
+        "jp": "手待ちをお願いします。",
+        "hiragana": "てまちを おねがいします。",
+        "id": "Tolong terkait menunggu (idle)."
+      },
+      {
+        "jp": "手待ちは終わりましたか？",
+        "hiragana": "てまちは おわりましたか？",
+        "id": "Apakah menunggu (idle) sudah selesai?"
+      },
+      {
+        "jp": "今日の手待ちについて話しましょう。",
+        "hiragana": "きょうの てまちについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang menunggu (idle) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "150",
+    "kanji": "並行",
+    "hiragana": "へいこう",
+    "romaji": "heikou",
+    "meaning": "paralel",
+    "shortExample": "Dikerjakan paralel.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Multitasking beberapa tiket sekaligus.",
+    "examples": [
+      {
+        "jp": "並行をお願いします。",
+        "hiragana": "へいこうを おねがいします。",
+        "id": "Tolong terkait paralel."
+      },
+      {
+        "jp": "並行は終わりましたか？",
+        "hiragana": "へいこうは おわりましたか？",
+        "id": "Apakah paralel sudah selesai?"
+      },
+      {
+        "jp": "今日の並行について話しましょう。",
+        "hiragana": "きょうの へいこうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang paralel hari ini."
+      }
+    ]
+  },
+  {
+    "id": "151",
+    "kanji": "合意",
+    "hiragana": "ごうい",
+    "romaji": "goui",
+    "meaning": "kesepakatan",
+    "shortExample": "Sudah ada kesepakatan dari klien.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Agreement dicapai.",
+    "examples": [
+      {
+        "jp": "合意をお願いします。",
+        "hiragana": "ごういを おねがいします。",
+        "id": "Tolong terkait kesepakatan."
+      },
+      {
+        "jp": "合意は終わりましたか？",
+        "hiragana": "ごういは おわりましたか？",
+        "id": "Apakah kesepakatan sudah selesai?"
+      },
+      {
+        "jp": "今日の合意について話しましょう。",
+        "hiragana": "きょうの ごういについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kesepakatan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "152",
+    "kanji": "共有事項",
+    "hiragana": "きょうゆうじこう",
+    "romaji": "kyouyuujikou",
+    "meaning": "hal yang ingin dibagikan",
+    "shortExample": "Ada satu info untuk tim.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Pengumuman di akhir standup.",
+    "examples": [
+      {
+        "jp": "共有事項をお願いします。",
+        "hiragana": "きょうゆうじこうを おねがいします。",
+        "id": "Tolong terkait hal yang ingin dibagikan."
+      },
+      {
+        "jp": "共有事項は終わりましたか？",
+        "hiragana": "きょうゆうじこうは おわりましたか？",
+        "id": "Apakah hal yang ingin dibagikan sudah selesai?"
+      },
+      {
+        "jp": "今日の共有事項について話しましょう。",
+        "hiragana": "きょうの きょうゆうじこうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang hal yang ingin dibagikan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "153",
+    "kanji": "休暇",
+    "hiragana": "きゅうか",
+    "romaji": "kyuuka",
+    "meaning": "cuti / libur",
+    "shortExample": "Jumat saya cuti.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Memberi tahu tim soal jadwal absen.",
+    "examples": [
+      {
+        "jp": "休暇をお願いします。",
+        "hiragana": "きゅうかを おねがいします。",
+        "id": "Tolong terkait cuti / libur."
+      },
+      {
+        "jp": "休暇は終わりましたか？",
+        "hiragana": "きゅうかは おわりましたか？",
+        "id": "Apakah cuti / libur sudah selesai?"
+      },
+      {
+        "jp": "今日の休暇について話しましょう。",
+        "hiragana": "きょうの きゅうかについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang cuti / libur hari ini."
+      }
+    ]
+  },
+  {
+    "id": "154",
+    "kanji": "体調不良",
+    "hiragana": "たいちょうふりょう",
+    "romaji": "taichoufuryou",
+    "meaning": "sakit / tidak enak badan",
+    "shortExample": "Maaf, saya agak sakit.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Alasan umum untuk minta WFH atau istirahat.",
+    "examples": [
+      {
+        "jp": "体調不良をお願いします。",
+        "hiragana": "たいちょうふりょうを おねがいします。",
+        "id": "Tolong terkait sakit / tidak enak badan."
+      },
+      {
+        "jp": "体調不良は終わりましたか？",
+        "hiragana": "たいちょうふりょうは おわりましたか？",
+        "id": "Apakah sakit / tidak enak badan sudah selesai?"
+      },
+      {
+        "jp": "今日の体調不良について話しましょう。",
+        "hiragana": "きょうの たいちょうふりょうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang sakit / tidak enak badan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "155",
+    "kanji": "通院",
+    "hiragana": "つういん",
+    "romaji": "tsuuin",
+    "meaning": "pergi ke rumah sakit / klinik",
+    "shortExample": "Siang nanti saya ke dokter.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Izin bentar untuk check up medis.",
+    "examples": [
+      {
+        "jp": "通院をお願いします。",
+        "hiragana": "つういんを おねがいします。",
+        "id": "Tolong terkait pergi ke rumah sakit / klinik."
+      },
+      {
+        "jp": "通院は終わりましたか？",
+        "hiragana": "つういんは おわりましたか？",
+        "id": "Apakah pergi ke rumah sakit / klinik sudah selesai?"
+      },
+      {
+        "jp": "今日の通院について話しましょう。",
+        "hiragana": "きょうの つういんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang pergi ke rumah sakit / klinik hari ini."
+      }
+    ]
+  },
+  {
+    "id": "156",
+    "kanji": "早退",
+    "hiragana": "そうたい",
+    "romaji": "soutai",
+    "meaning": "pulang lebih awal",
+    "shortExample": "Hari ini saya pulang cepat.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Pulang sebelum jam kerja usai.",
+    "examples": [
+      {
+        "jp": "早退をお願いします。",
+        "hiragana": "そうたいを おねがいします。",
+        "id": "Tolong terkait pulang lebih awal."
+      },
+      {
+        "jp": "早退は終わりましたか？",
+        "hiragana": "そうたいは おわりましたか？",
+        "id": "Apakah pulang lebih awal sudah selesai?"
+      },
+      {
+        "jp": "今日の早退について話しましょう。",
+        "hiragana": "きょうの そうたいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang pulang lebih awal hari ini."
+      }
+    ]
+  },
+  {
+    "id": "157",
+    "kanji": "遅刻",
+    "hiragana": "ちこく",
+    "romaji": "chikoku",
+    "meaning": "terlambat",
+    "shortExample": "Maaf telat masuk meeting.",
+    "category": "Standup",
+    "level": "N5",
+    "tip": "Wajib minta maaf kalau telat di Jepang.",
+    "examples": [
+      {
+        "jp": "遅刻をお願いします。",
+        "hiragana": "ちこくを おねがいします。",
+        "id": "Tolong terkait terlambat."
+      },
+      {
+        "jp": "遅刻は終わりましたか？",
+        "hiragana": "ちこくは おわりましたか？",
+        "id": "Apakah terlambat sudah selesai?"
+      },
+      {
+        "jp": "今日の遅刻について話しましょう。",
+        "hiragana": "きょうの ちこくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang terlambat hari ini."
+      }
+    ]
+  },
+  {
+    "id": "158",
+    "kanji": "直行",
+    "hiragana": "ちょっこう",
+    "romaji": "chokkou",
+    "meaning": "langsung pergi ke tujuan (klien)",
+    "shortExample": "Besok saya langsung ke kantor klien.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Tidak mampir ke kantor sendiri dulu.",
+    "examples": [
+      {
+        "jp": "直行をお願いします。",
+        "hiragana": "ちょっこうを おねがいします。",
+        "id": "Tolong terkait langsung pergi ke tujuan (klien)."
+      },
+      {
+        "jp": "直行は終わりましたか？",
+        "hiragana": "ちょっこうは おわりましたか？",
+        "id": "Apakah langsung pergi ke tujuan (klien) sudah selesai?"
+      },
+      {
+        "jp": "今日の直行について話しましょう。",
+        "hiragana": "きょうの ちょっこうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang langsung pergi ke tujuan (klien) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "159",
+    "kanji": "直帰",
+    "hiragana": "ちょっき",
+    "romaji": "chokki",
+    "meaning": "langsung pulang (dari klien)",
+    "shortExample": "Selesai meeting langsung pulang rumah.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Habis dari luar langsung balik rumah.",
+    "examples": [
+      {
+        "jp": "直帰をお願いします。",
+        "hiragana": "ちょっきを おねがいします。",
+        "id": "Tolong terkait langsung pulang (dari klien)."
+      },
+      {
+        "jp": "直帰は終わりましたか？",
+        "hiragana": "ちょっきは おわりましたか？",
+        "id": "Apakah langsung pulang (dari klien) sudah selesai?"
+      },
+      {
+        "jp": "今日の直帰について話しましょう。",
+        "hiragana": "きょうの ちょっきについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang langsung pulang (dari klien) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "160",
+    "kanji": "引継ぎ",
+    "hiragana": "ひきつぎ",
+    "romaji": "hikitsugi",
+    "meaning": "handover / serah terima",
+    "shortExample": "Handover kerjaan sebelum cuti.",
+    "category": "Standup",
+    "level": "N4",
+    "tip": "Oper tugas ke rekan setim.",
+    "examples": [
+      {
+        "jp": "引継ぎをお願いします。",
+        "hiragana": "ひきつぎを おねがいします。",
+        "id": "Tolong terkait handover / serah terima."
+      },
+      {
+        "jp": "引継ぎは終わりましたか？",
+        "hiragana": "ひきつぎは おわりましたか？",
+        "id": "Apakah handover / serah terima sudah selesai?"
+      },
+      {
+        "jp": "今日の引継ぎについて話しましょう。",
+        "hiragana": "きょうの ひきつぎについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang handover / serah terima hari ini."
+      }
+    ]
+  },
+  {
+    "id": "161",
     "kanji": "会社",
     "hiragana": "かいしゃ",
     "romaji": "kaisha",
@@ -2270,17 +4510,17 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Saya bekerja di kantor.",
     "category": "Kerja umum",
     "level": "N5",
-    "tip": "Kata dasar untuk menyebut tempat kerja/kantor.",
+    "tip": "Kata dasar untuk tempat kerja.",
     "examples": [
       {
-        "jp": "会社で働いています。",
-        "hiragana": "かいしゃで はたらいています。",
-        "id": "Saya sedang bekerja di perusahaan."
+        "jp": "会社をお願いします。",
+        "hiragana": "かいしゃを おねがいします。",
+        "id": "Tolong terkait kantor / perusahaan."
       },
       {
-        "jp": "私の会社はIT企業です。",
-        "hiragana": "わたしの かいしゃは アイティー きぎょうです。",
-        "id": "Perusahaan saya adalah perusahaan IT."
+        "jp": "会社は終わりましたか？",
+        "hiragana": "かいしゃは おわりましたか？",
+        "id": "Apakah kantor / perusahaan sudah selesai?"
       },
       {
         "jp": "今日の会社について話しましょう。",
@@ -2290,7 +4530,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "82",
+    "id": "162",
     "kanji": "仕様",
     "hiragana": "しよう",
     "romaji": "shiyou",
@@ -2298,7 +4538,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Cek spesifikasinya.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Sangat penting! Kalau bingung bug atau bukan, tanyakan 'Kore wa shiyou desu ka?'",
+    "tip": "Sangat penting, panduan dari PM/Klien.",
     "examples": [
       {
         "jp": "仕様をお願いします。",
@@ -2318,7 +4558,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "83",
+    "id": "163",
     "kanji": "残業",
     "hiragana": "ざんぎょう",
     "romaji": "zangyou",
@@ -2326,7 +4566,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Hari ini lembur.",
     "category": "Kerja umum",
     "level": "N5",
-    "tip": "Realita kerja di IT, hati-hati jangan sampai kebanyakan lembur (karoushi).",
+    "tip": "Realita kerja di IT.",
     "examples": [
       {
         "jp": "残業をお願いします。",
@@ -2346,7 +4586,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "84",
+    "id": "164",
     "kanji": "開発",
     "hiragana": "かいはつ",
     "romaji": "kaihatsu",
@@ -2354,7 +4594,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Fase development dimulai.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Proses pembuatan software dari awal.",
+    "tip": "Proses ngoding software.",
     "examples": [
       {
         "jp": "開発をお願いします。",
@@ -2374,7 +4614,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "85",
+    "id": "165",
     "kanji": "担当",
     "hiragana": "たんとう",
     "romaji": "tantou",
@@ -2382,7 +4622,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Siapa PIC-nya?",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Menunjuk orang yang bertanggung jawab atas suatu modul.",
+    "tip": "Orang yang bertanggung jawab.",
     "examples": [
       {
         "jp": "担当をお願いします。",
@@ -2402,7 +4642,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "86",
+    "id": "166",
     "kanji": "設計",
     "hiragana": "せっけい",
     "romaji": "sekkei",
@@ -2410,7 +4650,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Desain sistemnya selesai.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Fase sebelum coding (System Design).",
+    "tip": "Fase System Design.",
     "examples": [
       {
         "jp": "設計をお願いします。",
@@ -2430,7 +4670,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "87",
+    "id": "167",
     "kanji": "条件",
     "hiragana": "じょうけん",
     "romaji": "jouken",
@@ -2438,7 +4678,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Syaratnya apa saja?",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Kriteria agar sebuah tiket bisa di-approve.",
+    "tip": "Kriteria approval.",
     "examples": [
       {
         "jp": "条件をお願いします。",
@@ -2458,7 +4698,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "88",
+    "id": "168",
     "kanji": "設定",
     "hiragana": "せってい",
     "romaji": "settei",
@@ -2466,7 +4706,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Ubah settingnya.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Konfigurasi aplikasi atau server.",
+    "tip": "Konfigurasi sistem.",
     "examples": [
       {
         "jp": "設定をお願いします。",
@@ -2486,7 +4726,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "89",
+    "id": "169",
     "kanji": "実行",
     "hiragana": "じっこう",
     "romaji": "jikkou",
@@ -2494,7 +4734,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Run scriptnya.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Menjalankan program atau command line.",
+    "tip": "Jalankan command.",
     "examples": [
       {
         "jp": "実行をお願いします。",
@@ -2514,7 +4754,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "90",
+    "id": "170",
     "kanji": "保存",
     "hiragana": "ほぞん",
     "romaji": "hozon",
@@ -2522,7 +4762,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Jangan lupa save.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Ctrl+S!",
+    "tip": "Aksi di database.",
     "examples": [
       {
         "jp": "保存をお願いします。",
@@ -2542,7 +4782,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "91",
+    "id": "171",
     "kanji": "管理",
     "hiragana": "かんり",
     "romaji": "kanri",
@@ -2550,7 +4790,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Manage servernya.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Tugas seorang admin atau manajer.",
+    "tip": "Mengontrol sesuatu.",
     "examples": [
       {
         "jp": "管理をお願いします。",
@@ -2570,7 +4810,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "92",
+    "id": "172",
     "kanji": "運用",
     "hiragana": "うんよう",
     "romaji": "unyou",
@@ -2578,7 +4818,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Masuk fase operasional.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Setelah rilis, aplikasi masuk fase operasional (DevOps).",
+    "tip": "Fase setelah live production.",
     "examples": [
       {
         "jp": "運用をお願いします。",
@@ -2598,7 +4838,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "93",
+    "id": "173",
     "kanji": "保守",
     "hiragana": "ほしゅ",
     "romaji": "hoshu",
@@ -2606,7 +4846,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Sedang maintenance.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Pemeliharaan rutin atau perbaikan minor paska rilis.",
+    "tip": "Perbaikan paska live.",
     "examples": [
       {
         "jp": "保守をお願いします。",
@@ -2626,7 +4866,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "94",
+    "id": "174",
     "kanji": "機能",
     "hiragana": "きのう",
     "romaji": "kinou",
@@ -2634,7 +4874,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Fitur baru rilis.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Apa saja yang bisa dilakukan oleh aplikasi.",
+    "tip": "Kapasitas aplikasi.",
     "examples": [
       {
         "jp": "機能をお願いします。",
@@ -2654,7 +4894,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "95",
+    "id": "175",
     "kanji": "出社",
     "hiragana": "しゅっしゃ",
     "romaji": "shussha",
@@ -2662,7 +4902,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Besok saya WFO.",
     "category": "Kerja umum",
     "level": "N5",
-    "tip": "Bekerja dari kantor (Work From Office).",
+    "tip": "Bekerja dari kantor.",
     "examples": [
       {
         "jp": "出社をお願いします。",
@@ -2682,7 +4922,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "96",
+    "id": "176",
     "kanji": "退社",
     "hiragana": "たいしゃ",
     "romaji": "taisha",
@@ -2690,7 +4930,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Saya pulang dulu.",
     "category": "Kerja umum",
     "level": "N5",
-    "tip": "Meninggalkan kantor di akhir hari.",
+    "tip": "Atau bisa juga berarti resign (berhenti dari perusahaan).",
     "examples": [
       {
         "jp": "退社をお願いします。",
@@ -2710,7 +4950,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "97",
+    "id": "177",
     "kanji": "有休",
     "hiragana": "ゆうきゅう",
     "romaji": "yuukyuu",
@@ -2718,7 +4958,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Ambil cuti besok.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Hak cuti karyawan (Paid Time Off).",
+    "tip": "Hak cuti tahunan karyawan.",
     "examples": [
       {
         "jp": "有休をお願いします。",
@@ -2738,7 +4978,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "98",
+    "id": "178",
     "kanji": "休憩",
     "hiragana": "きゅうけい",
     "romaji": "kyuukei",
@@ -2746,7 +4986,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Waktunya istirahat.",
     "category": "Kerja umum",
     "level": "N5",
-    "tip": "Biasanya jam 12 sampai jam 1 siang.",
+    "tip": "Biasanya siang hari.",
     "examples": [
       {
         "jp": "休憩をお願いします。",
@@ -2766,7 +5006,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "99",
+    "id": "179",
     "kanji": "業務",
     "hiragana": "ぎょうむ",
     "romaji": "gyoumu",
@@ -2774,7 +5014,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Fokus ke tugas utama.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Pekerjaan sehari-hari.",
+    "tip": "Operasional sehari-hari.",
     "examples": [
       {
         "jp": "業務をお願いします。",
@@ -2794,7 +5034,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     ]
   },
   {
-    "id": "100",
+    "id": "180",
     "kanji": "同僚",
     "hiragana": "どうりょう",
     "romaji": "douryou",
@@ -2802,7 +5042,7 @@ export const VOCABULARY_DATA: Vocabulary[] = [
     "shortExample": "Rekan satu tim.",
     "category": "Kerja umum",
     "level": "N4",
-    "tip": "Orang-orang yang bekerja di perusahaan yang sama.",
+    "tip": "Orang di kantor.",
     "examples": [
       {
         "jp": "同僚をお願いします。",
@@ -2818,6 +5058,566 @@ export const VOCABULARY_DATA: Vocabulary[] = [
         "jp": "今日の同僚について話しましょう。",
         "hiragana": "きょうの どうりょうについて はなしましょう。",
         "id": "Mari kita bicarakan tentang rekan kerja hari ini."
+      }
+    ]
+  },
+  {
+    "id": "181",
+    "kanji": "上司",
+    "hiragana": "じょうし",
+    "romaji": "joushi",
+    "meaning": "atasan",
+    "shortExample": "Atasan saya galak.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Manager atau lead.",
+    "examples": [
+      {
+        "jp": "上司をお願いします。",
+        "hiragana": "じょうしを おねがいします。",
+        "id": "Tolong terkait atasan."
+      },
+      {
+        "jp": "上司は終わりましたか？",
+        "hiragana": "じょうしは おわりましたか？",
+        "id": "Apakah atasan sudah selesai?"
+      },
+      {
+        "jp": "今日の上司について話しましょう。",
+        "hiragana": "きょうの じょうしについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang atasan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "182",
+    "kanji": "部下",
+    "hiragana": "ぶか",
+    "romaji": "buka",
+    "meaning": "bawahan",
+    "shortExample": "Bawahan saya pintar.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Junior di tim.",
+    "examples": [
+      {
+        "jp": "部下をお願いします。",
+        "hiragana": "ぶかを おねがいします。",
+        "id": "Tolong terkait bawahan."
+      },
+      {
+        "jp": "部下は終わりましたか？",
+        "hiragana": "ぶかは おわりましたか？",
+        "id": "Apakah bawahan sudah selesai?"
+      },
+      {
+        "jp": "今日の部下について話しましょう。",
+        "hiragana": "きょうの ぶかについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang bawahan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "183",
+    "kanji": "顧客",
+    "hiragana": "こきゃく",
+    "romaji": "kokyaku",
+    "meaning": "pelanggan / klien",
+    "shortExample": "Klien minta revisi.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Orang yang membayar kita.",
+    "examples": [
+      {
+        "jp": "顧客をお願いします。",
+        "hiragana": "こきゃくを おねがいします。",
+        "id": "Tolong terkait pelanggan / klien."
+      },
+      {
+        "jp": "顧客は終わりましたか？",
+        "hiragana": "こきゃくは おわりましたか？",
+        "id": "Apakah pelanggan / klien sudah selesai?"
+      },
+      {
+        "jp": "今日の顧客について話しましょう。",
+        "hiragana": "きょうの こきゃくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang pelanggan / klien hari ini."
+      }
+    ]
+  },
+  {
+    "id": "184",
+    "kanji": "部署",
+    "hiragana": "ぶしょ",
+    "romaji": "busho",
+    "meaning": "departemen",
+    "shortExample": "Departemen IT.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Divisi dalam perusahaan.",
+    "examples": [
+      {
+        "jp": "部署をお願いします。",
+        "hiragana": "ぶしょを おねがいします。",
+        "id": "Tolong terkait departemen."
+      },
+      {
+        "jp": "部署は終わりましたか？",
+        "hiragana": "ぶしょは おわりましたか？",
+        "id": "Apakah departemen sudah selesai?"
+      },
+      {
+        "jp": "今日の部署について話しましょう。",
+        "hiragana": "きょうの ぶしょについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang departemen hari ini."
+      }
+    ]
+  },
+  {
+    "id": "185",
+    "kanji": "人事",
+    "hiragana": "じんじ",
+    "romaji": "jinji",
+    "meaning": "HR / Personalia",
+    "shortExample": "Tanya HRD.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Urusan gaji, rekrutmen.",
+    "examples": [
+      {
+        "jp": "人事をお願いします。",
+        "hiragana": "じんじを おねがいします。",
+        "id": "Tolong terkait HR / Personalia."
+      },
+      {
+        "jp": "人事は終わりましたか？",
+        "hiragana": "じんじは おわりましたか？",
+        "id": "Apakah HR / Personalia sudah selesai?"
+      },
+      {
+        "jp": "今日の人事について話しましょう。",
+        "hiragana": "きょうの じんじについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang HR / Personalia hari ini."
+      }
+    ]
+  },
+  {
+    "id": "186",
+    "kanji": "経理",
+    "hiragana": "けいり",
+    "romaji": "keiri",
+    "meaning": "akuntansi / finance",
+    "shortExample": "Claim transport ke Finance.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Urusan duit dan reimbursement.",
+    "examples": [
+      {
+        "jp": "経理をお願いします。",
+        "hiragana": "けいりを おねがいします。",
+        "id": "Tolong terkait akuntansi / finance."
+      },
+      {
+        "jp": "経理は終わりましたか？",
+        "hiragana": "けいりは おわりましたか？",
+        "id": "Apakah akuntansi / finance sudah selesai?"
+      },
+      {
+        "jp": "今日の経理について話しましょう。",
+        "hiragana": "きょうの けいりについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang akuntansi / finance hari ini."
+      }
+    ]
+  },
+  {
+    "id": "187",
+    "kanji": "営業",
+    "hiragana": "えいぎょう",
+    "romaji": "eigyou",
+    "meaning": "sales / pemasaran",
+    "shortExample": "Tim sales capai target.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Bagian yang jualan produk kita.",
+    "examples": [
+      {
+        "jp": "営業をお願いします。",
+        "hiragana": "えいぎょうを おねがいします。",
+        "id": "Tolong terkait sales / pemasaran."
+      },
+      {
+        "jp": "営業は終わりましたか？",
+        "hiragana": "えいぎょうは おわりましたか？",
+        "id": "Apakah sales / pemasaran sudah selesai?"
+      },
+      {
+        "jp": "今日の営業について話しましょう。",
+        "hiragana": "きょうの えいぎょうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang sales / pemasaran hari ini."
+      }
+    ]
+  },
+  {
+    "id": "188",
+    "kanji": "契約",
+    "hiragana": "けいやく",
+    "romaji": "keiyaku",
+    "meaning": "kontrak",
+    "shortExample": "Tanda tangan kontrak.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Perjanjian kerja / SLA.",
+    "examples": [
+      {
+        "jp": "契約をお願いします。",
+        "hiragana": "けいやくを おねがいします。",
+        "id": "Tolong terkait kontrak."
+      },
+      {
+        "jp": "契約は終わりましたか？",
+        "hiragana": "けいやくは おわりましたか？",
+        "id": "Apakah kontrak sudah selesai?"
+      },
+      {
+        "jp": "今日の契約について話しましょう。",
+        "hiragana": "きょうの けいやくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kontrak hari ini."
+      }
+    ]
+  },
+  {
+    "id": "189",
+    "kanji": "給料",
+    "hiragana": "きゅうりょう",
+    "romaji": "kyuuryou",
+    "meaning": "gaji",
+    "shortExample": "Gajian cair!",
+    "category": "Kerja umum",
+    "level": "N5",
+    "tip": "Hal yang ditunggu-tunggu.",
+    "examples": [
+      {
+        "jp": "給料をお願いします。",
+        "hiragana": "きゅうりょうを おねがいします。",
+        "id": "Tolong terkait gaji."
+      },
+      {
+        "jp": "給料は終わりましたか？",
+        "hiragana": "きゅうりょうは おわりましたか？",
+        "id": "Apakah gaji sudah selesai?"
+      },
+      {
+        "jp": "今日の給料について話しましょう。",
+        "hiragana": "きょうの きゅうりょうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang gaji hari ini."
+      }
+    ]
+  },
+  {
+    "id": "190",
+    "kanji": "賞与",
+    "hiragana": "しょうよ",
+    "romaji": "shouyo",
+    "meaning": "bonus",
+    "shortExample": "Bonus akhir tahun.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Sering juga disebut 'boonasu'.",
+    "examples": [
+      {
+        "jp": "賞与をお願いします。",
+        "hiragana": "しょうよを おねがいします。",
+        "id": "Tolong terkait bonus."
+      },
+      {
+        "jp": "賞与は終わりましたか？",
+        "hiragana": "しょうよは おわりましたか？",
+        "id": "Apakah bonus sudah selesai?"
+      },
+      {
+        "jp": "今日の賞与について話しましょう。",
+        "hiragana": "きょうの しょうよについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang bonus hari ini."
+      }
+    ]
+  },
+  {
+    "id": "191",
+    "kanji": "採用",
+    "hiragana": "さいよう",
+    "romaji": "saiyou",
+    "meaning": "rekrutmen / diterima kerja",
+    "shortExample": "Diterima kerja di Google.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Proses hiring.",
+    "examples": [
+      {
+        "jp": "採用をお願いします。",
+        "hiragana": "さいようを おねがいします。",
+        "id": "Tolong terkait rekrutmen / diterima kerja."
+      },
+      {
+        "jp": "採用は終わりましたか？",
+        "hiragana": "さいようは おわりましたか？",
+        "id": "Apakah rekrutmen / diterima kerja sudah selesai?"
+      },
+      {
+        "jp": "今日の採用について話しましょう。",
+        "hiragana": "きょうの さいようについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang rekrutmen / diterima kerja hari ini."
+      }
+    ]
+  },
+  {
+    "id": "192",
+    "kanji": "退職",
+    "hiragana": "たいしょく",
+    "romaji": "taishoku",
+    "meaning": "resign",
+    "shortExample": "Saya mau resign bulan depan.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Berhenti bekerja dari perusahaan.",
+    "examples": [
+      {
+        "jp": "退職をお願いします。",
+        "hiragana": "たいしょくを おねがいします。",
+        "id": "Tolong terkait resign."
+      },
+      {
+        "jp": "退職は終わりましたか？",
+        "hiragana": "たいしょくは おわりましたか？",
+        "id": "Apakah resign sudah selesai?"
+      },
+      {
+        "jp": "今日の退職について話しましょう。",
+        "hiragana": "きょうの たいしょくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang resign hari ini."
+      }
+    ]
+  },
+  {
+    "id": "193",
+    "kanji": "規則",
+    "hiragana": "きそく",
+    "romaji": "kisoku",
+    "meaning": "peraturan",
+    "shortExample": "Patuhi aturan kantor.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Company rules.",
+    "examples": [
+      {
+        "jp": "規則をお願いします。",
+        "hiragana": "きそくを おねがいします。",
+        "id": "Tolong terkait peraturan."
+      },
+      {
+        "jp": "規則は終わりましたか？",
+        "hiragana": "きそくは おわりましたか？",
+        "id": "Apakah peraturan sudah selesai?"
+      },
+      {
+        "jp": "今日の規則について話しましょう。",
+        "hiragana": "きょうの きそくについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang peraturan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "194",
+    "kanji": "研修",
+    "hiragana": "けんしゅう",
+    "romaji": "kenshuu",
+    "meaning": "training / pelatihan",
+    "shortExample": "Ikut training AWS.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Program orientasi untuk karyawan baru.",
+    "examples": [
+      {
+        "jp": "研修をお願いします。",
+        "hiragana": "けんしゅうを おねがいします。",
+        "id": "Tolong terkait training / pelatihan."
+      },
+      {
+        "jp": "研修は終わりましたか？",
+        "hiragana": "けんしゅうは おわりましたか？",
+        "id": "Apakah training / pelatihan sudah selesai?"
+      },
+      {
+        "jp": "今日の研修について話しましょう。",
+        "hiragana": "きょうの けんしゅうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang training / pelatihan hari ini."
+      }
+    ]
+  },
+  {
+    "id": "195",
+    "kanji": "出張",
+    "hiragana": "しゅっちょう",
+    "romaji": "shucchou",
+    "meaning": "perjalanan dinas (business trip)",
+    "shortExample": "Dinas ke Tokyo.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Dibiayai oleh perusahaan.",
+    "examples": [
+      {
+        "jp": "出張をお願いします。",
+        "hiragana": "しゅっちょうを おねがいします。",
+        "id": "Tolong terkait perjalanan dinas (business trip)."
+      },
+      {
+        "jp": "出張は終わりましたか？",
+        "hiragana": "しゅっちょうは おわりましたか？",
+        "id": "Apakah perjalanan dinas (business trip) sudah selesai?"
+      },
+      {
+        "jp": "今日の出張について話しましょう。",
+        "hiragana": "きょうの しゅっちょうについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang perjalanan dinas (business trip) hari ini."
+      }
+    ]
+  },
+  {
+    "id": "196",
+    "kanji": "交通費",
+    "hiragana": "こうつうひ",
+    "romaji": "koutsuuhi",
+    "meaning": "biaya transportasi",
+    "shortExample": "Reimburse ongkos kereta.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Biasanya ditanggung perusahaan di Jepang.",
+    "examples": [
+      {
+        "jp": "交通費をお願いします。",
+        "hiragana": "こうつうひを おねがいします。",
+        "id": "Tolong terkait biaya transportasi."
+      },
+      {
+        "jp": "交通費は終わりましたか？",
+        "hiragana": "こうつうひは おわりましたか？",
+        "id": "Apakah biaya transportasi sudah selesai?"
+      },
+      {
+        "jp": "今日の交通費について話しましょう。",
+        "hiragana": "きょうの こうつうひについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang biaya transportasi hari ini."
+      }
+    ]
+  },
+  {
+    "id": "197",
+    "kanji": "名刺",
+    "hiragana": "めいし",
+    "romaji": "meishi",
+    "meaning": "kartu nama",
+    "shortExample": "Ini kartu nama saya.",
+    "category": "Kerja umum",
+    "level": "N5",
+    "tip": "Identitas wajib.",
+    "examples": [
+      {
+        "jp": "名刺をお願いします。",
+        "hiragana": "めいしを おねがいします。",
+        "id": "Tolong terkait kartu nama."
+      },
+      {
+        "jp": "名刺は終わりましたか？",
+        "hiragana": "めいしは おわりましたか？",
+        "id": "Apakah kartu nama sudah selesai?"
+      },
+      {
+        "jp": "今日の名刺について話しましょう。",
+        "hiragana": "きょうの めいしについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang kartu nama hari ini."
+      }
+    ]
+  },
+  {
+    "id": "198",
+    "kanji": "資料作成",
+    "hiragana": "しりょうさくせい",
+    "romaji": "shiryousakusei",
+    "meaning": "pembuatan dokumen",
+    "shortExample": "Bikin materi slide.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Kerjaan PM atau Sales.",
+    "examples": [
+      {
+        "jp": "資料作成をお願いします。",
+        "hiragana": "しりょうさくせいを おねがいします。",
+        "id": "Tolong terkait pembuatan dokumen."
+      },
+      {
+        "jp": "資料作成は終わりましたか？",
+        "hiragana": "しりょうさくせいは おわりましたか？",
+        "id": "Apakah pembuatan dokumen sudah selesai?"
+      },
+      {
+        "jp": "今日の資料作成について話しましょう。",
+        "hiragana": "きょうの しりょうさくせいについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang pembuatan dokumen hari ini."
+      }
+    ]
+  },
+  {
+    "id": "199",
+    "kanji": "備品",
+    "hiragana": "びひん",
+    "romaji": "bihin",
+    "meaning": "perlengkapan kantor",
+    "shortExample": "Minta mouse baru dari kantor.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Monitor, laptop, dll inventaris kantor.",
+    "examples": [
+      {
+        "jp": "備品をお願いします。",
+        "hiragana": "びひんを おねがいします。",
+        "id": "Tolong terkait perlengkapan kantor."
+      },
+      {
+        "jp": "備品は終わりましたか？",
+        "hiragana": "びひんは おわりましたか？",
+        "id": "Apakah perlengkapan kantor sudah selesai?"
+      },
+      {
+        "jp": "今日の備品について話しましょう。",
+        "hiragana": "きょうの びひんについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang perlengkapan kantor hari ini."
+      }
+    ]
+  },
+  {
+    "id": "200",
+    "kanji": "社内",
+    "hiragana": "しゃない",
+    "romaji": "shanai",
+    "meaning": "internal perusahaan",
+    "shortExample": "Info ini khusus internal.",
+    "category": "Kerja umum",
+    "level": "N4",
+    "tip": "Rahasia perusahaan, jangan disebar.",
+    "examples": [
+      {
+        "jp": "社内をお願いします。",
+        "hiragana": "しゃないを おねがいします。",
+        "id": "Tolong terkait internal perusahaan."
+      },
+      {
+        "jp": "社内は終わりましたか？",
+        "hiragana": "しゃないは おわりましたか？",
+        "id": "Apakah internal perusahaan sudah selesai?"
+      },
+      {
+        "jp": "今日の社内について話しましょう。",
+        "hiragana": "きょうの しゃないについて はなしましょう。",
+        "id": "Mari kita bicarakan tentang internal perusahaan hari ini."
       }
     ]
   }

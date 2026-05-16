@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { ArrowLeft, Building2, Search, Zap } from "lucide-react";
+import { ArrowLeft, Building2, Search, Zap, EyeOff } from "lucide-react";
 import { VocabularyCard } from "../components/VocabularyCard";
 import { VOCABULARY_DATA, Category, Level } from "../data/vocabulary";
 
@@ -16,6 +16,7 @@ export default function KaishaPage() {
   const [activeLevel, setActiveLevel] = useState<LevelTab>("Semua");
   const [favorites, setFavorites] = useState<string[]>([]);
   const [isMounted, setIsMounted] = useState(false);
+  const [isFocusMode, setIsFocusMode] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
@@ -30,25 +31,22 @@ export default function KaishaPage() {
   }, []);
 
   const handleToggleFavorite = (id: string) => {
-    setFavorites(prev => {
-      const newFavs = prev.includes(id) 
-        ? prev.filter(fId => fId !== id)
-        : [...prev, id];
+    setFavorites((prev) => {
+      const newFavs = prev.includes(id) ? prev.filter((fId) => fId !== id) : [...prev, id];
       localStorage.setItem("nagomi_favorites", JSON.stringify(newFavs));
       return newFavs;
     });
   };
 
-  const filteredData = VOCABULARY_DATA.filter(item => {
-    // 1. Search Filter
+  const filteredData = VOCABULARY_DATA.filter((item) => {
     const query = searchQuery.toLowerCase();
-    const matchesSearch = !query || 
+    const matchesSearch =
+      !query ||
       item.kanji.toLowerCase().includes(query) ||
       item.hiragana.toLowerCase().includes(query) ||
       item.romaji.toLowerCase().includes(query) ||
       item.meaning.toLowerCase().includes(query);
-      
-    // 2. Category / Favorit Filter
+
     let matchesTab = true;
     if (activeTab === "Favorit") {
       matchesTab = favorites.includes(item.id);
@@ -56,7 +54,6 @@ export default function KaishaPage() {
       matchesTab = item.category === activeTab;
     }
 
-    // 3. Level Filter
     let matchesLevel = true;
     if (activeLevel !== "Semua") {
       matchesLevel = item.level === activeLevel;
@@ -65,16 +62,15 @@ export default function KaishaPage() {
     return matchesSearch && matchesTab && matchesLevel;
   });
 
-  if (!isMounted) return null; // Avoid hydration mismatch on favorites
+  if (!isMounted) return null;
 
   const categories: Tab[] = ["Semua", "QA/Bug", "Komunikasi", "Report", "Standup", "Kerja umum", "Favorit"];
   const levels: LevelTab[] = ["Semua", "N5", "N4"];
 
   return (
     <div className="min-h-screen bg-brand-bg pb-12">
-      {/* Header Area */}
       <div className="max-w-3xl mx-auto pt-6 px-4">
-        <button 
+        <button
           onClick={() => router.push("/")}
           className="flex items-center gap-1 text-brand-pink-dark hover:text-brand-pink-darker text-sm font-medium mb-6 transition-colors"
         >
@@ -82,23 +78,23 @@ export default function KaishaPage() {
           <span>Kembali</span>
         </button>
 
+        {/* Header */}
         <div className="flex items-start justify-between mb-8">
           <div className="flex items-center gap-4">
             <div className="w-11 h-11 bg-brand-pink rounded-xl flex items-center justify-center shrink-0">
               <Building2 className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-[#1F1F1F] text-xl font-semibold leading-tight">
-                QA Kosakata
-              </h1>
-              <span className="text-[#9CA3AF] text-sm">
-                きゅーえー・こさかた
-              </span>
+              <h1 className="text-[#1F1F1F] text-xl font-semibold leading-tight">QA Kosakata</h1>
+              <span className="text-[#9CA3AF] text-sm">きゅーえー・こさかた</span>
             </div>
           </div>
-          
+
           <div className="flex flex-col items-end gap-2">
-            <button className="flex items-center gap-1.5 px-4 py-1.5 bg-brand-pink text-white rounded-full text-sm font-medium hover:bg-pink-500 transition-colors shadow-sm">
+            <button
+              onClick={() => router.push("/latihan")}
+              className="flex items-center gap-1.5 px-4 py-1.5 bg-brand-pink text-white rounded-full text-sm font-medium hover:bg-pink-500 transition-colors shadow-sm"
+            >
               <Zap className="w-4 h-4" />
               Latihan
             </button>
@@ -113,48 +109,66 @@ export default function KaishaPage() {
           </div>
         </div>
 
-        {/* Search */}
-        <div className="relative mb-6">
-          <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-            <Search className="w-5 h-5 text-brand-pink-dark" />
+        {/* Search & Focus Mode */}
+        <div className="flex gap-3 mb-6">
+          <div className="relative flex-1">
+            <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+              <Search className="w-5 h-5 text-brand-pink-dark" />
+            </div>
+            <input
+              type="text"
+              placeholder="Cari kanji, hiragana, romaji, arti..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full bg-brand-navbar border border-brand-border rounded-xl py-3 pl-12 pr-4 text-brand-pink-darker placeholder-brand-pink-dark outline-none focus:border-brand-pink transition-colors"
+            />
           </div>
-          <input
-            type="text"
-            placeholder="Cari kanji, hiragana, romaji, arti..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-brand-navbar border border-brand-border rounded-xl py-3 pl-12 pr-4 text-brand-pink-darker placeholder-brand-pink-dark outline-none focus:border-brand-pink transition-colors"
-          />
+
+          <button
+            onClick={() => setIsFocusMode(!isFocusMode)}
+            title="Sembunyikan arti & cara baca (untuk hafalan)"
+            className={[
+              "px-4 rounded-xl flex flex-col items-center justify-center gap-1 transition-colors border",
+              isFocusMode
+                ? "bg-brand-pink border-brand-pink text-white"
+                : "bg-white border-brand-border text-brand-pink-dark hover:bg-pink-50",
+            ].join(" ")}
+          >
+            <EyeOff className="w-5 h-5" />
+            <span className="text-[10px] font-bold uppercase tracking-wider">Focus</span>
+          </button>
         </div>
 
-        {/* Filters Row 1 */}
+        {/* Filter Tabs Row 1 */}
         <div className="flex flex-wrap gap-2 mb-3">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveTab(cat)}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                activeTab === cat 
-                  ? "bg-brand-active text-white" 
-                  : "bg-[#FCE7F3] text-brand-pink-dark hover:bg-pink-200"
-              }`}
+              className={[
+                "px-4 py-1.5 rounded-full text-sm font-medium transition-colors",
+                activeTab === cat
+                  ? "bg-brand-active text-white"
+                  : "bg-[#FCE7F3] text-brand-pink-dark hover:bg-pink-200",
+              ].join(" ")}
             >
-              {cat === "Favorit" ? `Favorit (${favorites.length})` : cat}
+              {cat === "Favorit" ? "Favorit (" + favorites.length + ")" : cat}
             </button>
           ))}
         </div>
 
-        {/* Filters Row 2 */}
+        {/* Filter Tabs Row 2 */}
         <div className="flex gap-2 mb-6">
           {levels.map((lvl) => (
             <button
               key={lvl}
               onClick={() => setActiveLevel(lvl)}
-              className={`px-4 py-1.5 rounded-full text-sm font-medium transition-colors ${
-                activeLevel === lvl 
-                  ? "bg-brand-active text-white" 
-                  : "bg-[#FCE7F3] text-brand-pink-dark hover:bg-pink-200"
-              }`}
+              className={[
+                "px-4 py-1.5 rounded-full text-sm font-medium transition-colors",
+                activeLevel === lvl
+                  ? "bg-brand-active text-white"
+                  : "bg-[#FCE7F3] text-brand-pink-dark hover:bg-pink-200",
+              ].join(" ")}
             >
               {lvl === "Semua" ? "N5 + N4" : lvl}
             </button>
@@ -163,26 +177,18 @@ export default function KaishaPage() {
 
         {/* Legend */}
         <div className="flex flex-wrap gap-4 mb-4">
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-[#FF6B9D]"></div>
-            <span className="text-[#6B7280] text-[11px]">QA/Bug</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-[#60A5FA]"></div>
-            <span className="text-[#6B7280] text-[11px]">Komunikasi</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-[#4ADE80]"></div>
-            <span className="text-[#6B7280] text-[11px]">Report</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-[#FBBF24]"></div>
-            <span className="text-[#6B7280] text-[11px]">Standup</span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full bg-[#A78BFA]"></div>
-            <span className="text-[#6B7280] text-[11px]">Kerja umum</span>
-          </div>
+          {[
+            { label: "QA/Bug", color: "#FF6B9D" },
+            { label: "Komunikasi", color: "#60A5FA" },
+            { label: "Report", color: "#4ADE80" },
+            { label: "Standup", color: "#FBBF24" },
+            { label: "Kerja umum", color: "#A78BFA" },
+          ].map((item) => (
+            <div key={item.label} className="flex items-center gap-1.5">
+              <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: item.color }}></div>
+              <span className="text-[#6B7280] text-[11px]">{item.label}</span>
+            </div>
+          ))}
         </div>
 
         <div className="text-[#6B7280] text-xs mb-4">
@@ -192,12 +198,13 @@ export default function KaishaPage() {
         {/* List */}
         <div className="flex flex-col gap-3">
           {filteredData.length > 0 ? (
-            filteredData.map(item => (
-              <VocabularyCard 
-                key={item.id} 
-                data={item} 
+            filteredData.map((item) => (
+              <VocabularyCard
+                key={item.id}
+                data={item}
                 isFavorited={favorites.includes(item.id)}
                 onToggleFavorite={handleToggleFavorite}
+                isFocusMode={isFocusMode}
               />
             ))
           ) : (
