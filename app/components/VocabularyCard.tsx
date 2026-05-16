@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Heart, Music } from "lucide-react";
+import { Heart, Music, Volume2 } from "lucide-react";
 import { Vocabulary } from "../data/vocabulary";
 
 interface VocabularyCardProps {
@@ -22,6 +22,20 @@ export function VocabularyCard({ data, isFavorited, onToggleFavorite }: Vocabula
       case "Kerja umum": return "bg-[#A78BFA]";
       default: return "bg-gray-400";
     }
+  };
+
+  const playAudio = (text: string, e?: React.MouseEvent) => {
+    if (e) e.stopPropagation();
+    
+    // Cancel any ongoing speech to ensure the new one plays immediately (helps with mobile Chrome)
+    window.speechSynthesis.cancel();
+    
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "ja-JP";
+    utterance.rate = 0.9; // slightly slower for clearer pronunciation
+    
+    // Important for iOS/Safari: speech must be triggered synchronously from a user action
+    window.speechSynthesis.speak(utterance);
   };
 
   return (
@@ -74,7 +88,10 @@ export function VocabularyCard({ data, isFavorited, onToggleFavorite }: Vocabula
             />
           </button>
 
-          <button className="flex items-center gap-1.5 px-3 py-1.5 bg-brand-pink text-white rounded-full hover:bg-pink-500 transition-colors">
+          <button 
+            onClick={(e) => playAudio(data.kanji, e)}
+            className="flex items-center gap-1.5 px-3 py-1.5 bg-brand-pink text-white rounded-full hover:bg-pink-500 transition-colors"
+          >
             <Music className="w-3.5 h-3.5" />
             <span className="text-xs font-medium">Audio</span>
           </button>
@@ -84,12 +101,27 @@ export function VocabularyCard({ data, isFavorited, onToggleFavorite }: Vocabula
       {/* Expanded State */}
       {isExpanded && (
         <div className="bg-brand-bg border-t border-brand-border p-4 text-sm animate-in fade-in slide-in-from-top-2 duration-200">
-          <div className="mb-3">
-            <div className="text-[#1F1F1F] mb-0.5">{data.fullExampleJP}</div>
-            <div className="text-brand-pink-dark text-xs mb-1">{data.fullExampleHiragana}</div>
-            <div className="text-brand-pink-dark text-sm">{data.fullExampleID}</div>
+          
+          {/* Multiple Examples */}
+          <div className="flex flex-col gap-4 mb-5">
+            {data.examples.map((ex, idx) => (
+              <div key={idx} className="flex gap-3">
+                <button 
+                  onClick={(e) => playAudio(ex.jp, e)}
+                  className="mt-0.5 w-6 h-6 shrink-0 bg-white border border-brand-pink text-brand-pink rounded-full flex items-center justify-center hover:bg-brand-pink hover:text-white transition-colors"
+                >
+                  <Volume2 className="w-3 h-3" />
+                </button>
+                <div>
+                  <div className="text-[#1F1F1F] mb-0.5 font-medium">{ex.jp}</div>
+                  <div className="text-brand-pink-dark text-xs mb-1">{ex.hiragana}</div>
+                  <div className="text-gray-600 text-[13px]">{ex.id}</div>
+                </div>
+              </div>
+            ))}
           </div>
           
+          {/* Tip Box */}
           <div className="bg-white border-l-4 border-brand-navbar rounded-r-lg p-2.5 shadow-sm">
             <span className="text-brand-pink-dark text-[11px] font-medium uppercase tracking-wider mb-1 block">
               ✧ tip
